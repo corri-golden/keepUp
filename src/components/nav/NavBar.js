@@ -10,12 +10,12 @@ class Navbar extends Component {
     render() {
         return (
             <NavBar bg="light" expand="lg">
-                <NavBar.Brand href="#home">KeepUp</NavBar.Brand>
+                <NavBar.Brand href="#home" to="/keepUp">KeepUp</NavBar.Brand>
                 <NavBar.Toggle aria-controls="basic-navbar-nav" />
                 <NavBar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="#home">Tickets</Nav.Link>
-                        <Nav.Link href="#link">Weekly Review</Nav.Link>
+                        <Nav.Link href="#home" to="/home">Tickets</Nav.Link>
+                        {/* <Link className="nav-link" to="/articles">Articles</Link> */}
                     </Nav>
                     <Form inline>
                     </Form>

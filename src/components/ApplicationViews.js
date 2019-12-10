@@ -18,6 +18,7 @@ class ApplicationViews extends Component {
         <Route path="/keepUp" render={(props) => {
           return <KeepUp />
         }} />
+        
       </React.Fragment>
     )
   }
