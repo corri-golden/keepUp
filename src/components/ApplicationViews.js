@@ -1,7 +1,8 @@
 import { Route } from 'react-router-dom'
 import React, { Component } from 'react'
-import Home from './home/Home'
+import Home from './home/Home.js'
 import KeepUp from './KeepUp.js'
+import HomeDetail from './home/HomeDetail.js';
 
 
 
@@ -18,8 +19,10 @@ class ApplicationViews extends Component {
         <Route path="/tickets" render={(props) => {
           return <KeepUp />
         }} />
-
-      </React.Fragment>
+        <Route path="/homeDetail" render={(props) => {
+          return <HomeDetail />
+        }} />
+    </React.Fragment>
     )
   }
 }

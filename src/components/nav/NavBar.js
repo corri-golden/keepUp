@@ -10,7 +10,7 @@ class Navbar extends Component {
     render() {
         return (
             <NavBar bg="light" expand="lg">
-                <NavBar.Brand href="#home" to="/home">KeepUp</NavBar.Brand>
+                <NavBar.Brand href="/" to="/home">KeepUp</NavBar.Brand>
                 <NavBar.Toggle aria-controls="basic-navbar-nav" />
                 <NavBar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
