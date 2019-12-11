@@ -1,27 +1,36 @@
 import React, { Component } from 'react';
-import { Button, Card } from "react-bootstrap"
+import { Button, Input, Form, FormGroup, Label, FormText } from 'reactstrap';
 
 
 
 class HomeDetail extends Component {
     render() {
-        return(
-        <Card className="text-center">
-            <Card.Header>Featured</Card.Header>
-            <Card.Body>
-                <Card.Title>Special title treatment</Card.Title>
-                <Card.Text>
-                    With supporting text below as a natural lead-in to additional content.
-      </Card.Text>
-                <Button variant="primary">Edit</Button>
-                
-                <Button variant="primary">Delete</Button>
-            </Card.Body>
-            <Card.Footer className="text-muted">2 days ago</Card.Footer>
-        </Card>
-        )
+        return (
+            <Form>
+                <FormGroup>
+                    <Label for="exampleEmail"></Label>
+                    <Input type="email" name="email" id="exampleEmail" placeholder="Maintenance Issue" />
+                </FormGroup>
+                <FormGroup>
+                    <Label for="exampleSelect">Select Car</Label>
+                    <Input type="select" name="select" id="exampleSelect">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </Input>
+                </FormGroup>
+                <FormGroup>
+                    <Label for="exampleText">Comment</Label>
+                    <Input type="textarea" name="text" id="exampleText" />
+                </FormGroup>
+            </Form>
+        );
     }
+
 }
+
 
 export default HomeDetail;
 
