@@ -14,7 +14,7 @@ class Navbar extends Component {
                 <NavBar.Toggle aria-controls="basic-navbar-nav" />
                 <NavBar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="#tickets" to="/tickets">Tickets</Nav.Link>
+                        <Nav.Link href="/tickets" to="/tickets">Tickets</Nav.Link>
                         {/* <Link className="nav-link" to="/articles">Articles</Link> */}
                     </Nav>
                     <Form inline>
@@ -22,28 +22,6 @@ class Navbar extends Component {
                 </NavBar.Collapse>
             </NavBar>
         )
-
-       //     <nav className="navbar bg-dark text-white flex-md-nowrap p-0 shadow">
-        //         <ul className="nav nav-pills nav-fill">
-        //             <li className="nav-item">
-        //                 <Link className="nav-link" to="/articles">Weekly Review</Link>
-        //             </li>
-        //             <li className="nav-item">
-        //                 <Link className="nav-link" to="/friends">KeepUp</Link>
-        //             </li>
-        //             <li className="nav-item">
-        //                 <Link className="nav-link" to="/messages">Tickets</Link>
-        //             </li>
-        //         </ul>
-        //         <span className="navbar-text">
-        //             <ul className="nav nav-pills nav-fill">
-        //                 <li className="nav-item">
-        //                     <Link className="nav-link" to="/register">Register</Link>
-        //                 </li>
-        //             </ul>
-        //         </span>
-        //     </nav>
-        // )
     }
 }
 

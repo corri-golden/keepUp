@@ -12,12 +12,12 @@ class Home extends Component {
                 <Row noGutters={true}>
                     <Col md={4}>
                         <Card className="imgContainer">
-                            <Link to="/HomeDetail"><img className="imgSize" src={require('./AirbagIndicator.jpg')} alt="airbag"></img></Link>
+                            <Link to="/HomeDetail?mt=1"><img className="imgSize" src={require('./AirbagIndicator.jpg')} alt="airbag" /></Link>
                         </Card>
                     </Col>
                     <Col md={4}>
                         <Card className="imgContainer">
-                            <Link to="/HomeDetail"><img className="imgSize" src={require('./AntilockBrakeWarning.jpeg')} alt="antiLock" /></Link>
+                            <Link to="/HomeDetail?mt=2"><img className="imgSize" src={require('./AntilockBrakeWarning.jpeg')} alt="antiLock" /></Link>
                         </Card>
                     </Col>
                     <Col md={4}>
