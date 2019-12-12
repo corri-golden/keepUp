@@ -43,7 +43,7 @@ class HomeDetail extends Component {
             this.setState({ loadingStatus: true });
             const message = {
                 message: this.state.message,
-                timeStamp: new Date (),  // change
+                timeStamp: new Date (),  
             };
 
             // Create the message and redirect user to ticket 
@@ -59,6 +59,7 @@ class HomeDetail extends Component {
             this.setState({messages: messages})
         }
         )}
+    
 
 
 
