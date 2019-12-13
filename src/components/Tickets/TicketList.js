@@ -19,13 +19,13 @@ class TicketList extends Component {
         }
         )}
 
-        deleteMessage = id => {
+        deleteTicket = id => {                // needs to match what's being passed below with the delete variable
             ticketManager.delete(id)
             .then(() => {
               ticketManager.getAll()
-              .then((newTickets) => {
+              .then((newMessages) => {
                 this.setState({
-                    tickets: newTickets
+                    messages: newMessages
                 })
               })
             })
@@ -42,6 +42,8 @@ class TicketList extends Component {
                         <Tickets
                             key={message.id}
                             message={message}
+                            // {...this.props}
+                            deleteMessage={this.deleteTicket}  // passing props to the child comp tickets
                             {...this.props}
                         />
                     )}

@@ -16,4 +16,10 @@ export default {
       body: JSON.stringify(newMessage)
     }).then(data => data.json())
   },
+  delete(id) {
+    return fetch(`${remoteURL}/tickets/${id}`, {
+        method: "DELETE"
+    })
+    .then(result => result.json())
+  }
 }
