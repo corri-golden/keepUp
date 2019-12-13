@@ -38,30 +38,6 @@
   ],
   "tickets": [
     {
-      "id": 1,
-      "maintenance": "oil change",
-      "message": "50 miles over due",
-      "timeStamp": "2019-12-06T15:03:19.456Z",
-      "userId": 3,
-      "carId": 1,
-      "maintenanceTypeId": 1
-    },
-    {
-      "id": 2,
-      "maintenance": "oil tire pressure",
-      "message": "560 miles over due",
-      "timeStamp": "2019-12-06T15:03:19.456Z",
-      "userId": 4,
-      "carId": 2,
-      "maintenanceTypeId": 2
-    },
-    {
-      "message": "jm jm",
-      "timeStamp": "2019-12-13T15:15:43.863Z",
-      "carSelect": "",
-      "id": 24
-    },
-    {
       "message": "What's cracking playa?",
       "timeStamp": "2019-12-13T15:19:38.784Z",
       "carSelect": 2,
@@ -74,22 +50,10 @@
       "id": 26
     },
     {
-      "message": "What about now?",
-      "timeStamp": "2019-12-13T15:22:18.894Z",
-      "carId": 0,
-      "id": 27
-    },
-    {
       "message": "j",
       "timeStamp": "2019-12-13T15:23:05.786Z",
       "carId": 3,
       "id": 28
-    },
-    {
-      "message": "sfsdf",
-      "timeStamp": "2019-12-13T15:25:13.233Z",
-      "carId": 0,
-      "id": 29
     }
   ],
   "maintenanceType": [
