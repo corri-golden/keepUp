@@ -19,10 +19,23 @@ class TicketList extends Component {
         }
         )}
 
+        deleteMessage = id => {
+            ticketManager.delete(id)
+            .then(() => {
+              ticketManager.getAll()
+              .then((newTickets) => {
+                this.setState({
+                    tickets: newTickets
+                })
+              })
+            })
+          }
+
 
 
         
     render() {
+        console.log(this.state.messages)
         return (
             <div className="container-cards">
                     {this.state.messages.map(message =>

@@ -19,8 +19,20 @@
   "cars": [
     {
       "id": 1,
+      "carMake": "Nissan",
+      "carModel": "Altima",
+      "userId": 1
+    },
+    {
+      "id": 2,
       "carMake": "Toyota",
-      "carModel": "Tacoma",
+      "carModel": "Camry",
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "carMake": "Dodge",
+      "carModel": "Caravan",
       "userId": 1
     }
   ],
@@ -44,59 +56,40 @@
       "maintenanceTypeId": 2
     },
     {
-      "message": "jjjjjjjjb",
-      "timeStamp": "2019-12-12T15:55:01.432Z",
-      "id": 3
+      "message": "jm jm",
+      "timeStamp": "2019-12-13T15:15:43.863Z",
+      "carSelect": "",
+      "id": 24
     },
     {
-      "message": "Come on Work!",
-      "timeStamp": "2019-12-12T15:58:34.077Z",
-      "id": 4
+      "message": "What's cracking playa?",
+      "timeStamp": "2019-12-13T15:19:38.784Z",
+      "carSelect": 2,
+      "id": 25
     },
     {
-      "message": "dsdsfdsfds",
-      "timeStamp": "2019-12-12T16:00:51.572Z",
-      "id": 5
+      "message": "Come on playa...",
+      "timeStamp": "2019-12-13T15:21:01.507Z",
+      "carId": 2,
+      "id": 26
     },
     {
-      "message": "fskdfnksfs",
-      "timeStamp": "2019-12-12T16:04:23.991Z",
-      "id": 6
+      "message": "What about now?",
+      "timeStamp": "2019-12-13T15:22:18.894Z",
+      "carId": 0,
+      "id": 27
     },
     {
-      "message": "fdsffsdfsdf",
-      "timeStamp": "2019-12-12T16:08:05.554Z",
-      "id": 7
+      "message": "j",
+      "timeStamp": "2019-12-13T15:23:05.786Z",
+      "carId": 3,
+      "id": 28
     },
     {
-      "message": "drtdryfryfr",
-      "timeStamp": "2019-12-12T16:15:22.333Z",
-      "id": 8
-    },
-    {
-      "message": "dlsfmkldsf",
-      "timeStamp": "2019-12-12T16:28:49.709Z",
-      "id": 9
-    },
-    {
-      "message": "fedd",
-      "timeStamp": "2019-12-12T16:30:34.519Z",
-      "id": 10
-    },
-    {
-      "message": "One up on the road.",
-      "timeStamp": "2019-12-12T16:33:23.697Z",
-      "id": 11
-    },
-    {
-      "message": "ddddddd",
-      "timeStamp": "2019-12-12T16:38:56.171Z",
-      "id": 12
-    },
-    {
-      "message": "I need a timestamp.",
-      "timeStamp": "2019-12-12T17:19:32.550Z",
-      "id": 13
+      "message": "sfsdf",
+      "timeStamp": "2019-12-13T15:25:13.233Z",
+      "carId": 0,
+      "id": 29
     }
   ],
   "maintenanceType": [
