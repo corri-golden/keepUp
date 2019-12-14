@@ -10,6 +10,8 @@ class Tickets extends Component {
             <h6>Time Stamp: {this.props.message.timeStamp}</h6> 
             <h2><span className="card-message">{this.props.message.message}</span></h2>
             <button type="button" onClick={() => this.props.deleteMessage(this.props.message.id)}>Delete</button>
+            <button type="button"
+            onClick={() => {this.props.history.push(`/tickets/${this.props.message.id}/edit`)}}>Edit</button>
             </div>
             </>
         )

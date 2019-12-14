@@ -5,6 +5,8 @@ import KeepUp from './KeepUp.js'
 import HomeDetail from './home/HomeDetail.js';
 import Tickets from './Tickets/Tickets.js'
 import TicketList from './Tickets/TicketList'
+import HomeDetailEdit from './home/HomeDetailEdit'
+
 
 
 
@@ -26,8 +28,12 @@ class ApplicationViews extends Component {
                     return <HomeDetail {...props} />
                 }} />
                 <Route path="/tickets" render={(props) => {
-                    return <TicketList />
-                }} 
+                    return <TicketList {...props} />
+                }} />
+                <Route
+                    path="/tickets/:messageId(\d+)/edit" render={props => {
+                        return <HomeDetailEdit {...props} />
+                    }}
                 />
             </React.Fragment>
         )

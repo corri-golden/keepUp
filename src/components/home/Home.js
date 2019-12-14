@@ -12,42 +12,42 @@ class Home extends Component {
                 <Row noGutters={true}>
                     <Col md={4}>
                         <Card className="imgContainer">
-                            <Link to="/HomeDetail?mt=1"><img className="imgSize" src={require('./AirbagIndicator.jpg')} alt="airbag" /></Link>
+                            <Link to="/HomeDetail?mt=1"><img className="imgSize" src={require('./photos/Airbag Indicator.jpg')} alt="airbag" /></Link>
                         </Card>
                     </Col>
                     <Col md={4}>
                         <Card className="imgContainer">
-                            <Link to="/HomeDetail?mt=2"><img className="imgSize" src={require('./AntilockBrakeWarning.jpeg')} alt="antiLock" /></Link>
+                            <Link to="/HomeDetail?mt=2"><img className="imgSize" src={require('./photos/AntilockBrakeWarning.jpeg')} alt="antiLock" /></Link>
                         </Card>
                     </Col>
                     <Col md={4}>
                         <div className="imgContainer">
-                            <Link to="/HomeDetail"><img className="imgSize" src={require('./BatteryAlert.jpeg')} alt="battery" /></Link>
+                            <Link to="/HomeDetail"><img className="imgSize" src={require('./photos/BatteryAlert2.jpg')} alt="battery" /></Link>
                         </div>
                     </Col>
                     <Col md={4}>
                         <div className="imgContainer">
-                            <Link to="/HomeDetail"><img className="imgSize" src={require('./EngineTempature.jpeg')} alt="battery" /></Link>
+                            <Link to="/HomeDetail"><img className="imgSize" src={require('./photos/Engine Tempature.jpg')} alt="battery" /></Link>
                         </div>
                     </Col>
                     <Col md={4}>
                         <div className="imgContainer">
-                            <Link to="/HomeDetail"><img className="imgSize" src={require('./OilPressure.jpeg')} alt="oil" /></Link>
+                            <Link to="/HomeDetail"><img className="imgSize" src={require('./photos/Oil Pressure.jpg')} alt="oil" /></Link>
                         </div>
                     </Col>
                     <Col md={4}>
                         <div className="imgContainer">
-                            <Link to="/HomeDetail"><img className="imgSize" src={require('./TirePressure.jpeg')} alt="tire" /></Link>
+                            <Link to="/HomeDetail"><img className="imgSize" src={require('./photos/TirePressure.jpeg')} alt="tire" /></Link>
                         </div>
                     </Col>
                     <Col md={4}>
                         <div className="imgContainer">
-                            <Link to="/HomeDetail"><img className="imgSize" src={require('./TractionControl.jpeg')} alt="tire" /></Link>
+                            <Link to="/HomeDetail"><img className="imgSize" src={require('./photos/TractionControl.jpeg')} alt="tire" /></Link>
                         </div>
                     </Col>
                     <Col md={4}>
                         <div className="imgContainer">
-                            <Link to="/HomeDetail"><img className="imgSize" src={require('./WasherFluid.jpeg')} alt="tire" /></Link>
+                            <Link to="/HomeDetail"><img className="imgSize" src={require('./photos/WasherFluid.jpeg')} alt="tire" /></Link>
                         </div>
                     </Col>
                     <Col md={4}>
