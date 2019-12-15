@@ -44,34 +44,16 @@
       "id": 26
     },
     {
-      "message": "I need to see why it's deleting two different messages each time.",
-      "timeStamp": "2019-12-14T13:19:00.037Z",
+      "message": "Let's see what happens",
+      "timeStamp": "2019-12-15T02:32:32.030Z",
       "carId": 0,
       "id": 27
     },
     {
-      "message": "I need to see what's going on.",
-      "timeStamp": "2019-12-14T13:19:21.012Z",
+      "message": "Drop it like it's hot",
+      "timeStamp": "2019-12-15T02:33:08.206Z",
       "carId": 0,
       "id": 28
-    },
-    {
-      "message": "Does this work?",
-      "timeStamp": "2019-12-14T13:27:07.120Z",
-      "carId": 0,
-      "id": 29
-    },
-    {
-      "message": "Hope this works!!!",
-      "timeStamp": "2019-12-14T13:36:53.815Z",
-      "carId": 0,
-      "id": 30
-    },
-    {
-      "message": "Come on",
-      "timeStamp": "2019-12-14T13:43:00.641Z",
-      "carId": 0,
-      "id": 31
     }
   ],
   "maintenanceType": [
