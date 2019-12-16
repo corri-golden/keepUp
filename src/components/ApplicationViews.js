@@ -6,7 +6,7 @@ import HomeDetail from './home/HomeDetail.js';
 import Tickets from './Tickets/Tickets.js'
 import TicketList from './Tickets/TicketList'
 import HomeDetailEdit from './home/HomeDetailEdit'
-import Login from './Auth/Login.js';
+// import Login from './Auth/Login.js';
 
 
 
@@ -22,15 +22,8 @@ class ApplicationViews extends Component {
     render() {  //i'm not using the keepUp.  It is home.
         return (
             <React.Fragment>
-                <Route path="/login" component={Login} />
-                    }}
-                />
                 <Route exact path="/" render={(props) => {
-                    if (this.isAuthenticated()) {
-                        return <Home {...props} />
-                    } else {
-                        return <Redirect to="/login" />
-                    }
+                    return <Home />
                 }} />
                 /* <Route path="/keepUp" render={(props) => {
                     return <KeepUp />
@@ -38,15 +31,11 @@ class ApplicationViews extends Component {
                 <Route path="/homeDetail" render={(props) => {
                     return <HomeDetail {...props} />
                 }} />
-                <Route path="/tickets" render={(props) => {
-                    if (this.isAuthenticated()) {
-                        return <Home {...props} />
-                    } else {
-                        return <Redirect to="/login" />
-                    }
+                <Route exact path="/tickets" render={(props) => {
+                    return <TicketList {...props} />
                 }} />
                 <Route
-                    path="/tickets/:messageId(\d+)/edit" render={props => {
+                    path="/tickets/:ticketsId(\d+)/edit" render={props => {
                         return <HomeDetailEdit {...props} />
                     }}
                 />

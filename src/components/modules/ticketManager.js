@@ -7,13 +7,13 @@ export default {
   getAll() {
     return fetch(`${remoteURL}/tickets`).then(result => result.json())
   },
-  post(newMessage) {
+  post(newTicket) {
     return fetch(`${remoteURL}/tickets`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify(newMessage)
+      body: JSON.stringify(newTicket)
     }).then(data => data.json())
   },
   delete(id) {
@@ -22,13 +22,13 @@ export default {
     })
     .then(result => result.json())
   },
-  update(editedMessage) {
-    return fetch(`${remoteURL}/tickets/${editedMessage.id}`, {
+  update(editedTicket) {
+    return fetch(`${remoteURL}/tickets/${editedTicket.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify(editedMessage)
+      body: JSON.stringify(editedTicket)
     }).then(data => data.json());
   }
 }

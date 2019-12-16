@@ -26,7 +26,7 @@ class HomeDetail extends Component {
     // }
 
     state = {
-        messages: [],
+        tickets: [],
         cars: [],
         timeStamp: "",
         carId: "",
@@ -39,27 +39,27 @@ class HomeDetail extends Component {
         this.setState(stateToChange);
     };
 
-    constructNewMessage = evt => {
+    constructNewTicket = evt => {
         evt.preventDefault();
-        if (this.state.message === "") {
+        if (this.state.ticket === "") {
             window.alert("Fill Out a Message");
         } else {
             this.setState({ loadingStatus: true });
-            const message = {
+            const ticket = {
                 message: this.state.message,
                 timeStamp: new Date(),
                 carId: Number(this.state.carId)
             };
             // Create the message and redirect user to ticket 
-            ticketManager.post(message)
+            ticketManager.post(ticket)
                 .then(() => this.props.history.push("/tickets"))
         }
     };
 
     componentDidMount() {
         ticketManager.getAll()
-            .then(messages => {
-                this.setState({ messages: messages })
+            .then(tickets => {
+                this.setState({ tickets: tickets })
             })
 
             carsManager.getAll()
@@ -89,7 +89,7 @@ class HomeDetail extends Component {
 
 
     render() {
-        // console.log(this.props.location.search)
+        console.log(this.state)
         return (
                 <>
                 <Form>
@@ -109,7 +109,7 @@ class HomeDetail extends Component {
                     <Form.Control type="textarea" required onChange={this.handleFieldChange} name="text" id="message" />
                 </Form.Group>
                 </Form>
-                <Button color="secondary" disabled={this.state.loadingStatus} onClick={this.constructNewMessage}>Submit</Button>
+                <Button color="secondary" disabled={this.state.loadingStatus} onClick={this.constructNewTicket}>Submit</Button>
                 </>
            )
     }
