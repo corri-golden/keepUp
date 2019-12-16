@@ -18,22 +18,24 @@ class HomeDetailEdit extends Component {    // responsible for filling in state 
         this.setState(stateToChange)
       }
   
-      updateExistingMessage = evt => {
+      updateExistingTicket = evt => {
         evt.preventDefault()
         this.setState({ loadingStatus: true });
-        const editedMessage = {
+        const editedTicket = {
             message: this.state.message,
+            id: this.props.match.params.ticketsId
         };
   
-        ticketManager.update(editedMessage)
+        ticketManager.update(editedTicket)
         .then(() => this.props.history.push("/tickets"))
       }
   
       componentDidMount() {
-        ticketManager.get(this.props.match.params.messageId)
-        .then(message => {
+        console.log(this.props)
+        ticketManager.get(this.props.match.params.ticketsId)
+        .then(ticket => {
             this.setState({
-              message: message.message,
+              message: ticket.message,
               loadingStatus: false,
             });
         });
@@ -56,7 +58,7 @@ class HomeDetailEdit extends Component {    // responsible for filling in state 
                 <label htmlFor="Maintenance"></label>
                 <button
                   type="button" disabled={this.state.loadingStatus}
-                  onClick={this.updateExistingMessage}
+                  onClick={this.updateExistingTicket}
                   className="btn btn-primary"
                 >Submit</button>
               </div>

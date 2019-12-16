@@ -22,8 +22,8 @@ export default {
     })
     .then(result => result.json())
   },
-  update(editedTicket) {
-    return fetch(`${remoteURL}/tickets/${editedTicket.id}`, {
+  update(editedTicket) {  // whole ticket
+    return fetch(`${remoteURL}/tickets/${editedTicket.id}`, {  //targeted
       method: "PUT",
       headers: {
         "Content-Type": "application/json"
