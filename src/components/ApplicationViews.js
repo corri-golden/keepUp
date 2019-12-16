@@ -31,8 +31,8 @@ class ApplicationViews extends Component {
                 <Route path="/homeDetail" render={(props) => {
                     return <HomeDetail {...props} />
                 }} />
-                <Route path="/tickets" render={(props) => {
-                    return <Tickets />
+                <Route exact path="/tickets" render={(props) => {
+                    return <TicketList {...props} />
                 }} />
                 <Route
                     path="/tickets/:ticketsId(\d+)/edit" render={props => {

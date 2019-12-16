@@ -8,14 +8,14 @@ class TicketList extends Component {
 
 
     state = {
-        messages: [],
+        tickets: [],
     }
 
     componentDidMount() {
         ticketManager.getAll()
-        .then(messages => {
-            console.log(messages)
-            this.setState({messages: messages})
+        .then(tickets => {
+            console.log(tickets)
+            this.setState({tickets: tickets})
         }
         )}
 
@@ -23,9 +23,9 @@ class TicketList extends Component {
             ticketManager.delete(id)
             .then(() => {
               ticketManager.getAll()
-              .then((newMessages) => {
+              .then((newTickets) => {
                 this.setState({
-                    messages: newMessages
+                    tickets: newTickets
                 })
               })
             })
@@ -35,15 +35,14 @@ class TicketList extends Component {
 
         
     render() {
-        console.log(this.state.messages)
+        console.log(this.state.tickets)
         return (
             <div className="container-cards">
-                    {this.state.messages.map(message =>
+                    {this.state.tickets.map(ticket =>
                         <Tickets
-                            key={message.id}
-                            message={message}
-                            // {...this.props}
-                            deleteMessage={this.deleteTicket}  // passing props to the child comp tickets
+                            key={ticket.id}
+                            ticket={ticket}
+                            deleteTicket={this.deleteTicket}  // passing props to the child comp tickets
                             {...this.props}
                         />
                     )}
