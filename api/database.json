@@ -42,42 +42,6 @@
       "timeStamp": "2019-12-13T15:21:01.507Z",
       "carId": 2,
       "id": 26
-    },
-    {
-      "message": "The brakes don't work",
-      "timeStamp": "2019-12-16T19:39:39.992Z",
-      "carId": 1,
-      "id": 27
-    },
-    {
-      "message": "The cd player skips",
-      "timeStamp": "2019-12-16T19:39:55.899Z",
-      "carId": 3,
-      "id": 28
-    },
-    {
-      "message": "I meant to put a real message",
-      "id": 29,
-      "carId": 1,
-      "timeStamp": "2019-12-16T19:56:25.925Z"
-    },
-    {
-      "message": "yyy",
-      "timeStamp": "2019-12-16T19:56:25.925Z",
-      "carId": 1,
-      "id": 30
-    },
-    {
-      "message": "Please Chase",
-      "timeStamp": "2019-12-16T20:13:31.605Z",
-      "carId": 1,
-      "id": 31
-    },
-    {
-      "message": "Lauren",
-      "timeStamp": "2019-12-16T20:31:19.655Z",
-      "carId": 2,
-      "id": 32
     }
   ],
   "maintenanceType": [

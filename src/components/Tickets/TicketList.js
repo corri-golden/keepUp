@@ -14,7 +14,7 @@ class TicketList extends Component {
     componentDidMount() {
         ticketManager.getAll()
         .then(tickets => {
-            console.log(tickets)
+            console.log("Tickets!!!!!", tickets)
             this.setState({tickets: tickets})
         }
         )}
@@ -35,7 +35,7 @@ class TicketList extends Component {
 
         
     render() {
-        console.log(this.deleteTicket)
+        console.log(this.state)
         return (
             <div className="container-cards">
                     {this.state.tickets.map(ticket =>
