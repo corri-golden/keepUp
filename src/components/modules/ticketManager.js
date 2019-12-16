@@ -5,7 +5,7 @@ export default {
     return fetch(`${remoteURL}/tickets/${id}`).then(result => result.json())
   },
   getAll() {
-    return fetch(`${remoteURL}/tickets`).then(result => result.json())
+    return fetch(`${remoteURL}/tickets?_expand=car`).then(result => result.json())
   },
   post(newTicket) {
     return fetch(`${remoteURL}/tickets`, {

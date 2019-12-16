@@ -44,44 +44,40 @@
       "id": 26
     },
     {
-      "message": "fdsfsfs",
-      "timeStamp": "2019-12-15T14:19:43.328Z",
-      "carId": 0,
+      "message": "The brakes don't work",
+      "timeStamp": "2019-12-16T19:39:39.992Z",
+      "carId": 1,
       "id": 27
     },
     {
-      "message": "What's cracking yo!",
-      "timeStamp": "2019-12-15T14:19:59.521Z",
-      "carId": 0,
+      "message": "The cd player skips",
+      "timeStamp": "2019-12-16T19:39:55.899Z",
+      "carId": 3,
       "id": 28
     },
     {
-      "message": "Maybe tonight",
-      "timeStamp": "2019-12-15T14:20:17.039Z",
-      "carId": 0,
-      "id": 29
+      "message": "I meant to put a real message",
+      "id": 29,
+      "carId": 1,
+      "timeStamp": "2019-12-16T19:56:25.925Z"
     },
     {
-      "message": "kkdfdfdfdd",
-      "timeStamp": "2019-12-16T16:29:38.294Z",
-      "carId": 2,
+      "message": "yyy",
+      "timeStamp": "2019-12-16T19:56:25.925Z",
+      "carId": 1,
       "id": 30
     },
     {
-      "message": "bk nkj",
-      "timeStamp": "2019-12-16T16:46:10.296Z",
-      "carId": 0,
+      "message": "Please Chase",
+      "timeStamp": "2019-12-16T20:13:31.605Z",
+      "carId": 1,
       "id": 31
     },
     {
-      "message": "y oy",
-      "timeStamp": "2019-12-16T17:21:12.364Z",
-      "carId": 0,
+      "message": "Lauren",
+      "timeStamp": "2019-12-16T20:31:19.655Z",
+      "carId": 2,
       "id": 32
-    },
-    {
-      "message": "AHHHHHH",
-      "id": 33
     }
   ],
   "maintenanceType": [

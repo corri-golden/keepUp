@@ -35,7 +35,7 @@ class TicketList extends Component {
 
         
     render() {
-        console.log(this.state.tickets)
+        console.log(this.deleteTicket)
         return (
             <div className="container-cards">
                     {this.state.tickets.map(ticket =>
