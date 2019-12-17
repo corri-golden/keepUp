@@ -42,12 +42,12 @@ class Home extends Component {
                     </Col>
                     <Col md={4}>
                         <div className="imgContainer">
-                            <Link to="/HomeDetail"><img className="imgSize" src={require('./photos/TractionControl.jpeg')} alt="tire" /></Link>
+                            <Link to="/HomeDetail"><img className="imgSize" src={require('./photos/Traction Control.jpg')} alt="tire" /></Link>
                         </div>
                     </Col>
                     <Col md={4}>
                         <div className="imgContainer">
-                            <Link to="/HomeDetail"><img className="imgSize" src={require('./photos/WasherFluid.jpeg')} alt="tire" /></Link>
+                            <Link to="/HomeDetail"><img className="imgSize" src={require('./photos/Washer Fluid Indicator.jpg')} alt="tire" /></Link>
                         </div>
                     </Col>
                     <Col md={4}>

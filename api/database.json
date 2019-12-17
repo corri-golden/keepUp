@@ -83,11 +83,39 @@
   "maintenanceType": [
     {
       "id": 1,
-      "name": "oil change"
+      "name": "Airbag Indicator"
     },
     {
       "id": 2,
-      "name": "tire pressure"
+      "name": "Antilock Brake Warning"
+    },
+    {
+      "id":3,
+      "name": "Battery Warning"
+    },
+    {
+      "id":4,
+      "name": "Engine Temperature Warning Light"
+    },
+    {
+      "id":5,
+      "name": "Oil Pressure Warning"
+    },
+    {
+      "id":6,
+      "name": "Tire Pressure Warning"
+    },
+    {
+      "id":7,
+      "name": "Traction Control"
+    },
+    {
+      "id":8,
+      "name": "Washer Fluid Indicator"
+    },
+    {
+      "id": 9,
+      "name": "Other"
     }
   ]
 }
