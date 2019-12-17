@@ -28,7 +28,7 @@ class ApplicationViews extends Component {
                 /* <Route path="/keepUp" render={(props) => {
                     return <KeepUp />
                 }} /> */
-                <Route path="/homeDetail" render={(props) => {
+                <Route path="/homeDetail/:maintenanceTypeId(\d+)" render={(props) => {
                     return <HomeDetail {...props} />
                 }} />
                 <Route exact path="/tickets" render={(props) => {

@@ -7,6 +7,7 @@ class Tickets extends Component {
         return(
             <>
             <div className="ticketBox">
+            <h6>{this.props.ticket.maintenanceType.name}</h6>
             <h6>Time Stamp: {this.props.ticket.timeStamp}</h6> 
             <h2><span className="card-message">{this.props.ticket.message}</span></h2>
             <h2><span className="card-message">{this.props.ticket.car.carMake} {this.props.ticket.car.carModel}</span></h2>
