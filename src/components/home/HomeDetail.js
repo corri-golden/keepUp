@@ -29,6 +29,7 @@ class HomeDetail extends Component {
         tickets: [],
         cars: [],
         timeStamp: "",
+        maintenanceType: "",
         carId: "",
         loadingStatus: false,
     };
@@ -48,7 +49,8 @@ class HomeDetail extends Component {
             const ticket = {
                 message: this.state.message,
                 timeStamp: new Date(),
-                carId: Number(this.state.carId)
+                carId: Number(this.state.carId),
+                maintenanceTypeId: this.state.maintenanceType.id
             };
             // Create the message and redirect user to ticket 
             ticketManager.post(ticket)
@@ -57,9 +59,14 @@ class HomeDetail extends Component {
     };
 
     componentDidMount() {
+        console.log(this.props.match.params.maintenanceTypeId)
         ticketManager.getAll()
             .then(tickets => {
                 this.setState({ tickets: tickets })
+            })
+        maintenanceTypeManager.get(this.props.match.params.maintenanceTypeId)
+            .then(maintenanceType => {
+                this.setState({ maintenanceType: maintenanceType})
             })
 
             carsManager.getAll()
@@ -88,13 +95,14 @@ class HomeDetail extends Component {
 
 
 
-    render() {
-        console.log(this.state)
+    render() {   
+        //   value is targeting the value of the input
+        console.log(this.state.maintenanceType)
         return (
                 <>
                 <Form>
                 <Form.Group>
-                    <Form.Control type="text" name="text" id="issue" placeholder="Maintenance Issue" />
+                    <Form.Control value={this.state.maintenanceType.name} type="text" name="text" id="issue" placeholder="Maintenance Issue" />
                 </Form.Group>
                     <Form.Group className="col-md-12 form-group form-inline">
                         <Form.Control as="select" id="carId" onChange={this.handleFieldChange}>

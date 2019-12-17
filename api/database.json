@@ -41,46 +41,67 @@
       "message": "Come on playa...",
       "timeStamp": "2019-12-13T15:21:01.507Z",
       "carId": 2,
-      "id": 26
+      "id": 26,
+      "maintenanceTypeId": 1
     },
     {
       "message": "The brakes don't work",
       "timeStamp": "2019-12-16T19:39:39.992Z",
       "carId": 1,
-      "id": 27
+      "id": 27,
+      "maintenanceTypeId": 1
     },
     {
       "message": "The cd player skips",
       "timeStamp": "2019-12-16T19:39:55.899Z",
       "carId": 3,
-      "id": 28
+      "id": 28,
+      "maintenanceTypeId": 1
     },
     {
       "message": "I meant to put a real message",
       "id": 29,
       "carId": 1,
-      "timeStamp": "2019-12-16T19:56:25.925Z"
+      "timeStamp": "2019-12-16T19:56:25.925Z",
+      "maintenanceTypeId": 1
     },
     {
       "message": "yyy",
       "timeStamp": "2019-12-16T19:56:25.925Z",
       "carId": 1,
-      "id": 30
+      "id": 30,
+      "maintenanceTypeId": 1
     },
     {
       "message": "Please Chase",
       "timeStamp": "2019-12-16T20:13:31.605Z",
       "carId": 1,
-      "id": 31
+      "id": 31,
+      "maintenanceTypeId": 1
     },
     {
       "message": "Lauren",
       "timeStamp": "2019-12-16T20:31:19.655Z",
       "carId": 2,
-      "id": 32
+      "id": 32,
+      "maintenanceTypeId": 1
+    },
+    {
+      "message": "Laurennnnn",
+      "timeStamp": "2019-12-17T17:18:57.661Z",
+      "carId": 1,
+      "maintenanceTypeId": 1,
+      "id": 33
+    },
+    {
+      "message": "Does this work?",
+      "timeStamp": "2019-12-17T17:23:50.393Z",
+      "carId": 3,
+      "maintenanceTypeId": 1,
+      "id": 34
     }
   ],
-  "maintenanceType": [
+  "maintenanceTypes": [
     {
       "id": 1,
       "name": "Airbag Indicator"
@@ -90,27 +111,27 @@
       "name": "Antilock Brake Warning"
     },
     {
-      "id":3,
+      "id": 3,
       "name": "Battery Warning"
     },
     {
-      "id":4,
+      "id": 4,
       "name": "Engine Temperature Warning Light"
     },
     {
-      "id":5,
+      "id": 5,
       "name": "Oil Pressure Warning"
     },
     {
-      "id":6,
+      "id": 6,
       "name": "Tire Pressure Warning"
     },
     {
-      "id":7,
+      "id": 7,
       "name": "Traction Control"
     },
     {
-      "id":8,
+      "id": 8,
       "name": "Washer Fluid Indicator"
     },
     {
