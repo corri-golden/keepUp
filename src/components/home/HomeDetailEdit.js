@@ -14,6 +14,7 @@ class HomeDetailEdit extends Component {    // responsible for filling in state 
     message: "",
     loadingStatus: true,
     cars: [],
+    maintenanceType: "",
   }
 
   handleFieldChange = evt => {
@@ -29,6 +30,7 @@ class HomeDetailEdit extends Component {    // responsible for filling in state 
       message: this.state.message,
       id: this.props.match.params.ticketsId,
       carId: Number(this.state.carId),
+      maintenanceType: this.state.maintenanceType
     };
 
     ticketManager.update(editedTicket)
@@ -45,6 +47,7 @@ class HomeDetailEdit extends Component {    // responsible for filling in state 
           message: ticket.message,
           loadingStatus: false,
           carId: ticket.carId,
+          maintenanceType: ticket.maintenanceType
         });
       });
       const currentUser = JSON.parse(localStorage.getItem("credentials"))
@@ -68,6 +71,10 @@ class HomeDetailEdit extends Component {    // responsible for filling in state 
       <>
         <form>
           <fieldset>
+          <Form.Group>
+                    <Form.Label>Maintenance Type</Form.Label>
+                    <Form.Control value= {this.state.maintenanceType.name} type="textarea" required onChange={this.handleFieldChange} name="text" id="maintenanceType" />
+                </Form.Group>
             <Form.Group className="col-md-12 form-group form-inline">
               <Form.Control value={this.state.carId} as="select" id="carId" onChange={this.handleFieldChange}>
                 {this.state.cars.map(car => (
