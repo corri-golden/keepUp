@@ -71,6 +71,7 @@ class HomeDetail extends Component {
 
             carsManager.getAll()
             .then(cars => {
+                console.log("carsManager", carsManager)
                 this.setState({ cars: cars })
             })
     }
@@ -95,14 +96,13 @@ class HomeDetail extends Component {
 
 
 
-    render() {   
-        //   value is targeting the value of the input
-        console.log(this.state.maintenanceType)
+    render() {  
+        console.log(this.props)
         return (
                 <>
                 <Form>
                 <Form.Group>
-                    <Form.Control value={this.state.maintenanceType.name} type="text" name="text" id="issue" placeholder="Maintenance Issue" />
+                    <h3>{this.state.maintenanceType.name}</h3>
                 </Form.Group>
                     <Form.Group className="col-md-12 form-group form-inline">
                         <Form.Control as="select" id="carId" onChange={this.handleFieldChange}>

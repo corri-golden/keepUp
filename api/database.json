@@ -31,6 +31,18 @@
     },
     {
       "id": 3,
+      "carMake": "Toyota",
+      "carModel": "Pruis",
+      "userId": 1
+    },
+    {
+      "id": 4,
+      "carMake": "Chevy",
+      "carModel": "Malibu",
+      "userId": 1
+    },
+    {
+      "id": 5,
       "carMake": "Dodge",
       "carModel": "Caravan",
       "userId": 1
@@ -38,10 +50,9 @@
   ],
   "tickets": [
     {
-      "message": "Come on playa...",
-      "timeStamp": "2019-12-13T15:21:01.507Z",
-      "carId": 2,
+      "message": "Come on playa...uhh!123",
       "id": 26,
+      "carId": 3,
       "maintenanceTypeId": 1
     },
     {
@@ -99,6 +110,55 @@
       "carId": 3,
       "maintenanceTypeId": 1,
       "id": 34
+    },
+    {
+      "message": "knjn jk",
+      "timeStamp": "2019-12-17T19:26:31.516Z",
+      "carId": 1,
+      "maintenanceTypeId": 1,
+      "id": 35
+    },
+    {
+      "message": "West Coast Hustle",
+      "timeStamp": "2019-12-17T19:43:20.804Z",
+      "carId": 1,
+      "maintenanceTypeId": 2,
+      "id": 37
+    },
+    {
+      "message": "Yo Yo",
+      "timeStamp": "2019-12-17T21:23:40.081Z",
+      "carId": 2,
+      "maintenanceTypeId": 2,
+      "id": 38
+    },
+    {
+      "message": "d",
+      "timeStamp": "2019-12-17T21:29:25.220Z",
+      "carId": 1,
+      "maintenanceTypeId": 1,
+      "id": 39
+    },
+    {
+      "message": "Come on",
+      "timeStamp": "2019-12-17T21:35:04.350Z",
+      "carId": 1,
+      "maintenanceTypeId": 1,
+      "id": 40
+    },
+    {
+      "message": "nijnin",
+      "timeStamp": "2019-12-17T21:41:36.499Z",
+      "carId": 2,
+      "maintenanceTypeId": 1,
+      "id": 41
+    },
+    {
+      "message": "dfds",
+      "timeStamp": "2019-12-17T21:57:10.588Z",
+      "carId": 1,
+      "maintenanceTypeId": 3,
+      "id": 42
     }
   ],
   "maintenanceTypes": [
