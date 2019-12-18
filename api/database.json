@@ -6,14 +6,14 @@
       "password": "123"
     },
     {
-      "id": "2",
-      "email": "her@her.com",
-      "password": "456"
+      "email": "me@me.com",
+      "password": "1234",
+      "id": 2
     },
     {
-      "id": "3",
-      "email": "you@you.com",
-      "password": "789"
+      "email": "matt@matt.com",
+      "password": "4444",
+      "id": 3
     }
   ],
   "cars": [
@@ -265,6 +265,34 @@
       "carId": 1,
       "maintenanceTypeId": 1,
       "id": 64
+    },
+    {
+      "message": "ddd",
+      "timeStamp": "2019-12-18T20:10:12.895Z",
+      "carId": 1,
+      "maintenanceTypeId": 1,
+      "id": 65
+    },
+    {
+      "message": "fgffffff",
+      "timeStamp": "2019-12-18T20:27:04.969Z",
+      "carId": 1,
+      "maintenanceTypeId": 1,
+      "id": 66
+    },
+    {
+      "message": "dfsfsfsdf",
+      "timeStamp": "2019-12-18T20:28:34.492Z",
+      "carId": 2,
+      "maintenanceTypeId": 1,
+      "id": 67
+    },
+    {
+      "message": "dvdv",
+      "timeStamp": "2019-12-18T20:30:58.369Z",
+      "carId": 1,
+      "maintenanceTypeId": 1,
+      "id": 68
     }
   ],
   "maintenanceTypes": [
