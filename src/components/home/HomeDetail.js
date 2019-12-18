@@ -44,7 +44,7 @@ class HomeDetail extends Component {
         evt.preventDefault();
         if (this.state.message === "") {
             window.alert("Fill Out a Message");
-        }  else if (this.state.carId === "Select A Car") {
+        }  else if (this.state.cars === null) {
             window.alert("Select a Car");
         } else {
             this.setState({ loadingStatus: true });
@@ -108,7 +108,7 @@ class HomeDetail extends Component {
                 </Form.Group>
                     <Form.Group className="col-md-12 form-group form-inline">
                         <Form.Control as="select" id="carId" onChange={this.handleFieldChange}>
-                        <option>Select A Car</option>
+                        <option id="0"> Select A Car</option>
                             {this.state.cars.map(car => (
                                 <option key={`select-option-${car.id}`} value={car.id}>{car.carMake} {car.carModel}</option>
                             ))}
