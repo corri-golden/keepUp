@@ -17,7 +17,7 @@ export default {
           .then(result => result.json())
       },
     post(newUser) {
-    return fetch(`${remoteURL}/users`, {
+        return fetch(`${remoteURL}/users`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

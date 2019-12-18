@@ -19,7 +19,7 @@ class Reg extends Component {
     stateToChange[evt.target.id] = evt.target.value
     this.setState(stateToChange)
   }
-  constructNewUser = evt => {
+  constructNewUser = evt => {    //create a new user
     evt.preventDefault();
     if(this.state.email === "" || this.state.password === "" || this.state.confirmPass !== this.state.password) {
       window.alert("oh no");

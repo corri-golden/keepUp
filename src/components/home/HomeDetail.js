@@ -28,6 +28,7 @@ class HomeDetail extends Component {
     state = {
         tickets: [],
         cars: [],
+        carId: "0",
         timeStamp: "",
         maintenanceType: "",
         message: "",
@@ -44,7 +45,7 @@ class HomeDetail extends Component {
         evt.preventDefault();
         if (this.state.message === "") {
             window.alert("Fill Out a Message");
-        }  else if (this.state.cars === null) {
+        }  else if (Number(this.state.carId) === 0) {
             window.alert("Select a Car");
         } else {
             this.setState({ loadingStatus: true });
@@ -108,7 +109,7 @@ class HomeDetail extends Component {
                 </Form.Group>
                     <Form.Group className="col-md-12 form-group form-inline">
                         <Form.Control as="select" id="carId" onChange={this.handleFieldChange}>
-                        <option id="0"> Select A Car</option>
+                        <option value="0"> Select A Car</option>
                             {this.state.cars.map(car => (
                                 <option key={`select-option-${car.id}`} value={car.id}>{car.carMake} {car.carModel}</option>
                             ))}
