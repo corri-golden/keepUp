@@ -31,7 +31,7 @@ class KeepUp extends Component {
   render() {
     return (
       <React.Fragment>
-        <Navbar user={this.state.user} clearUser={this.clearUser} />
+        <Navbar user={this.state.user} clearUser={this.clearUser}{...this.props} />
         <ApplicationViews user={this.state.user}
           setUser={this.setUser}
           isAuthenticated = {this.isAuthenticated }/>
