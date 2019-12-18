@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import { Button, Input, Form, Label, FormText } from 'react-bootstrap';
 import ticketManager from "../modules/ticketManager"
 import carsManager from "../modules/carsManager";
+import maintenanceTypeManager from "../modules/maintenanceTypeManager";
 
 
 
@@ -14,28 +15,33 @@ class HomeDetailEdit extends Component {    // responsible for filling in state 
     message: "",
     loadingStatus: true,
     cars: [],
+    maintenanceTypeId: "",
+    maintenanceTypes: [],
+    timeStamp: ""
   }
 
-  handleFieldChange = evt => {
+  handleFieldChange = evt => {  //sets the value as the user changes it
     const stateToChange = {}
     stateToChange[evt.target.id] = evt.target.value
     this.setState(stateToChange)
   }
 
-  updateExistingTicket = evt => {
+  updateExistingTicket = evt => {    
     evt.preventDefault()
     this.setState({ loadingStatus: true });
     const editedTicket = {
       message: this.state.message,
       id: this.props.match.params.ticketsId,
       carId: Number(this.state.carId),
+      maintenanceTypeId: Number(this.state.maintenanceTypeId),
+      timeStamp: this.state.timeStamp
     };
 
     ticketManager.update(editedTicket)
       .then(() => this.props.history.push("/tickets"))
   }
 
-  
+
 
   componentDidMount() {
     console.log(this.props)
@@ -45,18 +51,26 @@ class HomeDetailEdit extends Component {    // responsible for filling in state 
           message: ticket.message,
           loadingStatus: false,
           carId: ticket.carId,
+          maintenanceTypeId: ticket.maintenanceTypeId,
+          timeStamp: ticket.timeStamp
         });
       });
-      const currentUser = JSON.parse(localStorage.getItem("credentials"))
-        carsManager.getAll(currentUser.id)
-        .then((cars) => {
-          this.setState({
-            cars: cars
-          })
+    const currentUser = JSON.parse(localStorage.getItem("credentials"))
+    carsManager.getAll(currentUser)
+      .then((cars) => {
+        this.setState({
+          cars: cars
         })
-    }
-    
-    
+      })
+      maintenanceTypeManager.getAll(this.props.match.params.maintenanceType)
+      .then((maintenanceTypes) => {
+        this.setState({
+          maintenanceTypes: maintenanceTypes
+        })
+      })
+  }
+
+
 
 
 
@@ -68,11 +82,19 @@ class HomeDetailEdit extends Component {    // responsible for filling in state 
       <>
         <form>
           <fieldset>
+            <Form.Group>
+              <Form.Label>Maintenance Type</Form.Label>
+              <Form.Control as="select" id="maintenanceTypeId" onChange={this.handleFieldChange}>
+                {this.state.maintenanceTypes.map(maintenanceType => {
+                  return <option value={maintenanceType.id} key={`select-option-${maintenanceType.name}`}>{maintenanceType.name}</option>
+                })}
+              </Form.Control>
+            </Form.Group>
             <Form.Group className="col-md-12 form-group form-inline">
               <Form.Control value={this.state.carId} as="select" id="carId" onChange={this.handleFieldChange}>
-                {this.state.cars.map(car => (
-                  <option key={`select-option-${car.id}`} value={car.id}>{car.carMake} {car.carModel}</option>
-                ))}
+                {this.state.cars.map(car => {
+                  return <option key={`select-option-${car.id}`} value={car.id}>{car.carMake} {car.carModel}</option>
+                })}
               </Form.Control>
             </Form.Group>
 

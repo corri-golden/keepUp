@@ -44,6 +44,8 @@ class HomeDetail extends Component {
         evt.preventDefault();
         if (this.state.ticket === "") {
             window.alert("Fill Out a Message");
+        }  if (this.state.carId === null) {
+            window.alert("Select a Car");
         } else {
             this.setState({ loadingStatus: true });
             const ticket = {

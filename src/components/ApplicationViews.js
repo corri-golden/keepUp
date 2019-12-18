@@ -15,7 +15,7 @@ import HomeDetailEdit from './home/HomeDetailEdit'
 
 
 
-class ApplicationViews extends Component {
+class ApplicationViews extends Component {   //adding /1 extension to pass it to the props to home detail.  change homedetail route.
 
     isAuthenticated = () => localStorage.getItem("credentials") !== null
 

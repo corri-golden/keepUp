@@ -50,33 +50,6 @@
   ],
   "tickets": [
     {
-      "message": "Come on playa...uhh!123",
-      "id": 26,
-      "carId": 3,
-      "maintenanceTypeId": 1
-    },
-    {
-      "message": "The brakes don't work",
-      "timeStamp": "2019-12-16T19:39:39.992Z",
-      "carId": 1,
-      "id": 27,
-      "maintenanceTypeId": 1
-    },
-    {
-      "message": "The cd player skips",
-      "timeStamp": "2019-12-16T19:39:55.899Z",
-      "carId": 3,
-      "id": 28,
-      "maintenanceTypeId": 1
-    },
-    {
-      "message": "I meant to put a real message",
-      "id": 29,
-      "carId": 1,
-      "timeStamp": "2019-12-16T19:56:25.925Z",
-      "maintenanceTypeId": 1
-    },
-    {
       "message": "yyy",
       "timeStamp": "2019-12-16T19:56:25.925Z",
       "carId": 1,
@@ -119,13 +92,6 @@
       "id": 35
     },
     {
-      "message": "West Coast Hustle",
-      "timeStamp": "2019-12-17T19:43:20.804Z",
-      "carId": 1,
-      "maintenanceTypeId": 2,
-      "id": 37
-    },
-    {
       "message": "Yo Yo",
       "timeStamp": "2019-12-17T21:23:40.081Z",
       "carId": 2,
@@ -159,6 +125,69 @@
       "carId": 1,
       "maintenanceTypeId": 3,
       "id": 42
+    },
+    {
+      "message": "Hey buddy",
+      "timeStamp": "2019-12-18T00:17:33.720Z",
+      "carId": 1,
+      "maintenanceTypeId": 1,
+      "id": 43
+    },
+    {
+      "message": "j",
+      "timeStamp": "2019-12-18T00:18:34.757Z",
+      "carId": 1,
+      "maintenanceTypeId": 1,
+      "id": 44
+    },
+    {
+      "message": "d",
+      "timeStamp": "2019-12-18T00:20:17.878Z",
+      "carId": 2,
+      "maintenanceTypeId": 1,
+      "id": 45
+    },
+    {
+      "message": "d",
+      "timeStamp": "2019-12-18T00:21:50.710Z",
+      "carId": 1,
+      "maintenanceTypeId": 1,
+      "id": 46
+    },
+    {
+      "message": "kkkkkkk",
+      "timeStamp": "2019-12-18T00:52:40.022Z",
+      "carId": 1,
+      "maintenanceTypeId": 1,
+      "id": 49
+    },
+    {
+      "message": "fight",
+      "timeStamp": "2019-12-18T00:53:07.596Z",
+      "carId": 2,
+      "maintenanceTypeId": 1,
+      "id": 50
+    },
+    {
+      "message": "Does this work?",
+      "id": 51,
+      "carId": 4,
+      "maintenanceTypeId": 1,
+      "timeStamp": "2019-12-18T14:36:02.604Z"
+    },
+    {
+      "message": "nkjnj",
+      "timeStamp": "2019-12-18T14:36:02.604Z",
+      "carId": 1,
+      "maintenanceTypeId": 2,
+      "id": 52
+    },
+    {
+      "message": "Chase's jump suit",
+      "timeStamp": "2019-12-18T15:24:17.634Z",
+      "carId": 2,
+      "maintenanceTypeId": 3,
+      "id": 53
     }
   ],
   "maintenanceTypes": [
