@@ -30,7 +30,7 @@ class HomeDetail extends Component {
         cars: [],
         timeStamp: "",
         maintenanceType: "",
-        carId: "",
+        message: "",
         loadingStatus: false,
     };
 
@@ -42,9 +42,9 @@ class HomeDetail extends Component {
 
     constructNewTicket = evt => {
         evt.preventDefault();
-        if (this.state.ticket === "") {
+        if (this.state.message === "") {
             window.alert("Fill Out a Message");
-        }  if (this.state.carId === null) {
+        }  else if (this.state.carId === "Select A Car") {
             window.alert("Select a Car");
         } else {
             this.setState({ loadingStatus: true });
