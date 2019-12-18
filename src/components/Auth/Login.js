@@ -1,4 +1,7 @@
 import React, { Component } from "react"
+import usersManager from "../modules/usersManager"
+
+
 
 
 
@@ -17,15 +20,19 @@ class Login extends Component {
   
   handleLogin = (e) => {
     e.preventDefault()
-    localStorage.setItem(
-        "credentials",
-        JSON.stringify({
-            email: this.state.email,
-            password: this.state.password
+    usersManager.getAllUsers()
+      .then(usersArray => {
+        usersArray.map(user => {
+          if(user.userName === this.state.userName && user.password === this.state.password){
+            this.props.setUser({
+              id: user.id,
+              userName: this.state.userName,
+              password: this.state.password
+            })
+            this.props.history.push("/")
+          }
         })
-    )
-    this.props.history.push("/");
-
+      })
   }
 
   render() {

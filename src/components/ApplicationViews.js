@@ -7,6 +7,7 @@ import Tickets from './Tickets/Tickets.js'
 import TicketList from './Tickets/TicketList'
 import HomeDetailEdit from './home/HomeDetailEdit'
 import Login from './Auth/Login.js'
+import Reg from './Auth/Reg.js'
 
 
 
@@ -22,7 +23,14 @@ class ApplicationViews extends Component {   //adding /1 extension to pass it to
     render() {  //i'm not using the keepUp.  It is home.
         return (
             <React.Fragment>
-                <Route path="/login" component={Login} />
+                <Route path= "/login" render = {props =>{
+                    return <Login setUser={this.props.setUser}{...props}/>
+                }}/>
+                <Route
+                exact path="/register" render={props => {
+                return <Reg setUser={this.props.setUser} {...props} />
+                }}
+                />
                 <Route exact path="/" render={(props) => {
                     if (this.isAuthenticated()) {
                         return <Home {...props} />
@@ -30,9 +38,9 @@ class ApplicationViews extends Component {   //adding /1 extension to pass it to
                         return <Redirect to="/login" />
                     }
                 }} />
-                /* <Route path="/keepUp" render={(props) => {
+                <Route path="/keepUp" render={(props) => {
                     return <KeepUp />
-                }} /> */
+                    }} /> 
                 <Route path="/homeDetail/:maintenanceTypeId(\d+)" render={(props) => {
                     return <HomeDetail {...props} />
                 }} />
