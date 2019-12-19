@@ -1,6 +1,8 @@
 import React, { Component } from "react"
 import ticketManager from '../modules/ticketManager'
 import Tickets from "./Tickets.js"
+import { getUser } from "../modules/Helper"
+
 
 
 
@@ -12,12 +14,14 @@ class TicketList extends Component {
     }
 
     componentDidMount() {
-        ticketManager.getAll()
-        .then(tickets => {
-            console.log(tickets)
-            this.setState({tickets: tickets})
-        }
-        )}
+        console.log(getUser())
+        ticketManager.getAllUserTickets(getUser().id)
+        .then(ticketsArray => {
+            console.log("yo yo", ticketsArray)
+            this.setState({
+                tickets: ticketsArray})
+        })
+    }
 
         deleteTicket = id => {                // needs to match what's being passed below with the delete variable
             ticketManager.delete(id)
@@ -35,6 +39,7 @@ class TicketList extends Component {
 
         
     render() {
+        console.log("render")
         console.log(this.deleteTicket)
         return (
             <div className="container-cards">

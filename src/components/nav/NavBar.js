@@ -7,7 +7,7 @@ import { Nav, NavDropdown, Form, Button, FormControl } from "react-bootstrap"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-class Navbar extends Component {
+class Navbar extends Component {  //withrouter allows to have access to history and props.
 
     handleLogout= () => {
         this.props.clearUser();

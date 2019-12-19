@@ -9,26 +9,6 @@
       "email": "me@me.com",
       "password": "1234",
       "id": 2
-    },
-    {
-      "email": "matt@matt.com",
-      "password": "4444",
-      "id": 3
-    },
-    {
-      "email": "ianpippin@gmail.com",
-      "password": "jippin",
-      "id": 4
-    },
-    {
-      "email": "see@me.com",
-      "password": "1234",
-      "id": 5
-    },
-    {
-      "email": "you@me",
-      "password": "1234",
-      "id": 6
     }
   ],
   "cars": [
@@ -69,280 +49,56 @@
       "id": 30,
       "carId": 1,
       "maintenanceTypeId": 1,
-      "timeStamp": "2019-12-16T19:56:25.925Z"
+      "timeStamp": "2019-12-16T19:56:25.925Z",
+      "userId": 1
     },
     {
-      "message": "Please Chase",
-      "timeStamp": "2019-12-16T20:13:31.605Z",
-      "carId": 1,
+      "message": "Please Chase!!!!",
       "id": 31,
-      "maintenanceTypeId": 1
-    },
-    {
-      "message": "Lauren",
-      "timeStamp": "2019-12-16T20:31:19.655Z",
-      "carId": 2,
-      "id": 32,
-      "maintenanceTypeId": 1
-    },
-    {
-      "message": "Laurennnnn",
-      "timeStamp": "2019-12-17T17:18:57.661Z",
-      "carId": 1,
-      "maintenanceTypeId": 1,
-      "id": 33
-    },
-    {
-      "message": "Does this work?",
-      "timeStamp": "2019-12-17T17:23:50.393Z",
-      "carId": 3,
-      "maintenanceTypeId": 1,
-      "id": 34
-    },
-    {
-      "message": "knjn jk",
-      "timeStamp": "2019-12-17T19:26:31.516Z",
-      "carId": 1,
-      "maintenanceTypeId": 1,
-      "id": 35
-    },
-    {
-      "message": "Yo Yo",
-      "timeStamp": "2019-12-17T21:23:40.081Z",
-      "carId": 2,
-      "maintenanceTypeId": 2,
-      "id": 38
-    },
-    {
-      "message": "d",
-      "timeStamp": "2019-12-17T21:29:25.220Z",
-      "carId": 1,
-      "maintenanceTypeId": 1,
-      "id": 39
-    },
-    {
-      "message": "Come on",
-      "timeStamp": "2019-12-17T21:35:04.350Z",
-      "carId": 1,
-      "maintenanceTypeId": 1,
-      "id": 40
-    },
-    {
-      "message": "nijnin",
-      "timeStamp": "2019-12-17T21:41:36.499Z",
-      "carId": 2,
-      "maintenanceTypeId": 1,
-      "id": 41
-    },
-    {
-      "message": "dfds",
-      "timeStamp": "2019-12-17T21:57:10.588Z",
-      "carId": 1,
-      "maintenanceTypeId": 3,
-      "id": 42
-    },
-    {
-      "message": "Hey buddy",
-      "timeStamp": "2019-12-18T00:17:33.720Z",
-      "carId": 1,
-      "maintenanceTypeId": 1,
-      "id": 43
-    },
-    {
-      "message": "j",
-      "timeStamp": "2019-12-18T00:18:34.757Z",
-      "carId": 1,
-      "maintenanceTypeId": 1,
-      "id": 44
-    },
-    {
-      "message": "d",
-      "timeStamp": "2019-12-18T00:20:17.878Z",
-      "carId": 2,
-      "maintenanceTypeId": 1,
-      "id": 45
-    },
-    {
-      "message": "d",
-      "timeStamp": "2019-12-18T00:21:50.710Z",
-      "carId": 1,
-      "maintenanceTypeId": 1,
-      "id": 46
-    },
-    {
-      "message": "kkkkkkk",
-      "timeStamp": "2019-12-18T00:52:40.022Z",
-      "carId": 1,
-      "maintenanceTypeId": 1,
-      "id": 49
-    },
-    {
-      "message": "fight",
-      "timeStamp": "2019-12-18T00:53:07.596Z",
-      "carId": 2,
-      "maintenanceTypeId": 1,
-      "id": 50
-    },
-    {
-      "message": "Does this work?",
-      "id": 51,
       "carId": 4,
-      "maintenanceTypeId": 1,
-      "timeStamp": "2019-12-18T14:36:02.604Z"
-    },
-    {
-      "message": "nkjnj",
-      "timeStamp": "2019-12-18T14:36:02.604Z",
-      "carId": 1,
-      "maintenanceTypeId": 2,
-      "id": 52
-    },
-    {
-      "message": "Chase's jump suit",
-      "timeStamp": "2019-12-18T15:24:17.634Z",
-      "carId": 2,
-      "maintenanceTypeId": 3,
-      "id": 53
-    },
-    {
-      "timeStamp": "2019-12-18T15:36:41.290Z",
-      "carId": 1,
-      "maintenanceTypeId": 1,
-      "id": 54,
-      "message": "fsdfsd"
-    },
-    {
-      "message": "fsdfsd",
-      "timeStamp": "2019-12-18T15:37:41.653Z",
-      "carId": 2,
-      "maintenanceTypeId": 1,
-      "id": 55
-    },
-    {
-      "message": "Yo",
-      "timeStamp": "2019-12-18T15:40:02.044Z",
-      "carId": 1,
-      "maintenanceTypeId": 1,
-      "id": 56
-    },
-    {
-      "timeStamp": "2019-12-18T15:44:38.561Z",
-      "carId": 1,
-      "maintenanceTypeId": 1,
-      "id": 57,
-      "message": "eeeeee"
-    },
-    {
-      "message": "",
-      "timeStamp": "2019-12-18T15:47:27.053Z",
-      "carId": 3,
-      "maintenanceTypeId": 1,
-      "id": 58
-    },
-    {
-      "message": "",
-      "timeStamp": "2019-12-18T15:47:44.251Z",
-      "carId": 5,
-      "maintenanceTypeId": 1,
-      "id": 59
-    },
-    {
-      "message": "",
-      "timeStamp": "2019-12-18T15:48:55.616Z",
-      "carId": 3,
-      "maintenanceTypeId": 1,
-      "id": 60
-    },
-    {
-      "message": "dddd",
-      "timeStamp": "2019-12-18T15:52:39.550Z",
-      "carId": 2,
-      "maintenanceTypeId": 1,
-      "id": 61
-    },
-    {
-      "message": "jjj",
-      "timeStamp": "2019-12-18T16:05:26.581Z",
-      "carId": 2,
-      "maintenanceTypeId": 1,
-      "id": 62
-    },
-    {
-      "message": "jjj",
-      "timeStamp": "2019-12-18T16:06:18.198Z",
-      "carId": 1,
-      "maintenanceTypeId": 1,
-      "id": 63
-    },
-    {
-      "message": "jjj",
-      "timeStamp": "2019-12-18T16:09:00.080Z",
-      "carId": 1,
-      "maintenanceTypeId": 1,
-      "id": 64
-    },
-    {
-      "message": "ddd",
-      "timeStamp": "2019-12-18T20:10:12.895Z",
-      "carId": 1,
-      "maintenanceTypeId": 1,
-      "id": 65
-    },
-    {
-      "message": "fgffffff",
-      "timeStamp": "2019-12-18T20:27:04.969Z",
-      "carId": 1,
-      "maintenanceTypeId": 1,
-      "id": 66
-    },
-    {
-      "message": "dfsfsfsdf",
-      "timeStamp": "2019-12-18T20:28:34.492Z",
-      "carId": 2,
-      "maintenanceTypeId": 1,
-      "id": 67
-    },
-    {
-      "message": "dvdv",
-      "timeStamp": "2019-12-18T20:30:58.369Z",
-      "carId": 1,
-      "maintenanceTypeId": 1,
-      "id": 68
-    },
-    {
-      "message": "dead!",
-      "id": 69,
-      "carId": 2,
-      "maintenanceTypeId": 3,
-      "timeStamp": "2019-12-18T20:59:54.579Z"
-    },
-    {
-      "message": "smells like shit",
-      "timeStamp": "2019-12-18T21:00:39.599Z",
-      "carId": 1,
       "maintenanceTypeId": 5,
-      "id": 70
+      "timeStamp": "2019-12-16T20:13:31.605Z",
+      "userId": 2
     },
     {
-      "message": "piece of shit",
-      "timeStamp": "2019-12-18T21:02:14.561Z",
-      "carId": 3,
-      "maintenanceTypeId": 7,
-      "id": 71
-    },
-    {
-      "message": "it's hobo piss and not washer fluid",
-      "timeStamp": "2019-12-18T21:03:18.304Z",
-      "carId": 5,
-      "maintenanceTypeId": 8,
-      "id": 72
-    },
-    {
-      "message": "Corri loves strong men with mustaches",
-      "timeStamp": "2019-12-18T21:03:53.580Z",
+      "message": "Brakes are not working well.  They are squeaking bad.",
+      "timeStamp": "2019-12-19T15:08:13.779Z",
       "carId": 4,
-      "maintenanceTypeId": 9,
-      "id": 73
+      "maintenanceTypeId": 2,
+      "id": 32,
+      "userId": 1
+    },
+    {
+      "message": "dfdfs",
+      "timeStamp": "2019-12-19T16:30:11.366Z",
+      "carId": 1,
+      "maintenanceTypeId": 1,
+      "id": 33,
+      "userId": 1
+    },
+    {
+      "message": "What's up?",
+      "timeStamp": "2019-12-19T16:31:50.860Z",
+      "carId": 4,
+      "maintenanceTypeId": 5,
+      "id": 34,
+      "userId": 1
+    },
+    {
+      "message": "yo you",
+      "timeStamp": "2019-12-19T16:33:16.483Z",
+      "carId": 2,
+      "maintenanceTypeId": 1,
+      "id": 35,
+      "userId": 1
+    },
+    {
+      "message": "Rolling the dice",
+      "timeStamp": "2019-12-19T16:53:18.082Z",
+      "carId": 3,
+      "maintenanceTypeId": 1,
+      "userId": 1,
+      "id": 36
     }
   ],
   "maintenanceTypes": [
