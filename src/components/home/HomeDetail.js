@@ -76,7 +76,7 @@ class HomeDetail extends Component {
                 this.setState({ maintenanceType: maintenanceType})
             })
 
-            carsManager.getAll()
+        carsManager.getAllUserCars(getUser().id)
             .then(cars => {
                 console.log("carsManager", carsManager)
                 this.setState({ cars: cars })
@@ -104,7 +104,7 @@ class HomeDetail extends Component {
 
 
     render() {  
-        console.log(this.props)
+        console.log(this.state)
         return (
                 <>
                 <Form>
