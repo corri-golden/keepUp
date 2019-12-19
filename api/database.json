@@ -83,22 +83,6 @@
       "maintenanceTypeId": 5,
       "id": 34,
       "userId": 1
-    },
-    {
-      "message": "yo you",
-      "timeStamp": "2019-12-19T16:33:16.483Z",
-      "carId": 2,
-      "maintenanceTypeId": 1,
-      "id": 35,
-      "userId": 1
-    },
-    {
-      "message": "Rolling the dice",
-      "timeStamp": "2019-12-19T16:53:18.082Z",
-      "carId": 3,
-      "maintenanceTypeId": 1,
-      "userId": 1,
-      "id": 36
     }
   ],
   "maintenanceTypes": [
