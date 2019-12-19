@@ -26,7 +26,7 @@ class TicketList extends Component {
         deleteTicket = id => {                // needs to match what's being passed below with the delete variable
             ticketManager.delete(id)
             .then(() => {
-              ticketManager.getAll()
+              ticketManager.getAllUserTickets(getUser().id)
               .then((newTickets) => {
                 this.setState({
                     tickets: newTickets

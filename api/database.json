@@ -53,52 +53,35 @@
       "userId": 1
     },
     {
-      "message": "Please Chase!!!!",
+      "message": "Please Chase!!!!mb",
       "id": 31,
       "carId": 4,
       "maintenanceTypeId": 5,
-      "timeStamp": "2019-12-16T20:13:31.605Z",
-      "userId": 2
+      "timeStamp": "2019-12-16T20:13:31.605Z"
     },
     {
-      "message": "Brakes are not working well.  They are squeaking bad.",
-      "timeStamp": "2019-12-19T15:08:13.779Z",
-      "carId": 4,
-      "maintenanceTypeId": 2,
+      "message": "Brakes are not working well.  They are squeaking bad and I'm mad.",
       "id": 32,
+      "carId": 5,
+      "maintenanceTypeId": 3,
+      "timeStamp": "2019-12-19T15:08:13.779Z",
       "userId": 1
     },
     {
-      "message": "dfdfs",
-      "timeStamp": "2019-12-19T16:30:11.366Z",
-      "carId": 1,
-      "maintenanceTypeId": 1,
-      "id": 33,
-      "userId": 1
-    },
-    {
-      "message": "What's up?",
-      "timeStamp": "2019-12-19T16:31:50.860Z",
-      "carId": 4,
-      "maintenanceTypeId": 5,
-      "id": 34,
-      "userId": 1
-    },
-    {
-      "message": "yo you",
-      "timeStamp": "2019-12-19T16:33:16.483Z",
-      "carId": 2,
-      "maintenanceTypeId": 1,
-      "id": 35,
-      "userId": 1
-    },
-    {
-      "message": "Rolling the dice",
-      "timeStamp": "2019-12-19T16:53:18.082Z",
+      "message": "My prius isn't pruising",
+      "timeStamp": "2019-12-19T17:14:00.612Z",
       "carId": 3,
       "maintenanceTypeId": 1,
-      "userId": 1,
-      "id": 36
+      "userId": 2,
+      "id": 33
+    },
+    {
+      "message": "My batteries keeps dying and I'm stranded on Dickerson Pike.  Help!!!!vv",
+      "id": 34,
+      "carId": 4,
+      "maintenanceTypeId": 5,
+      "timeStamp": "2019-12-19T17:14:27.910Z",
+      "userId": 2
     }
   ],
   "maintenanceTypes": [

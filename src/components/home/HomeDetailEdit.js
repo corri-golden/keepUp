@@ -1,8 +1,10 @@
 import React, { Component } from "react"
-import { Button, Input, Form, Label, FormText } from 'react-bootstrap';
+import { Button, Input, Form, Label, FormText, useAccordionToggle } from 'react-bootstrap';
 import ticketManager from "../modules/ticketManager"
 import carsManager from "../modules/carsManager";
 import maintenanceTypeManager from "../modules/maintenanceTypeManager";
+import { getUser } from "../modules/Helper";
+
 
 
 
@@ -17,7 +19,8 @@ class HomeDetailEdit extends Component {    // responsible for filling in state 
     cars: [],
     maintenanceTypeId: "",
     maintenanceTypes: [],
-    timeStamp: ""
+    timeStamp: "",
+    userId: [],
   }
 
   handleFieldChange = evt => {  //sets the value as the user changes it
@@ -34,7 +37,8 @@ class HomeDetailEdit extends Component {    // responsible for filling in state 
       id: this.props.match.params.ticketsId,
       carId: Number(this.state.carId),
       maintenanceTypeId: Number(this.state.maintenanceTypeId),
-      timeStamp: this.state.timeStamp
+      timeStamp: this.state.timeStamp,
+      userId: getUser().id
     };
 
     ticketManager.update(editedTicket)
