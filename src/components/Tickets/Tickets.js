@@ -2,7 +2,7 @@ import React, { Component } from "react"
 
 class Tickets extends Component {
     render(){
-        console.log("tickets props", this.props.ticket.car.carMake)
+        // console.log("tickets props", this.props.ticket.car.carMake)
         // <h2><span className="card-message">{this.props.car.carId}</span></h2>
         return(
             <>

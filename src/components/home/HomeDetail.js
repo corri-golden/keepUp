@@ -3,6 +3,8 @@ import { Button, Input, Form, Label, FormText } from 'react-bootstrap';
 import maintenanceTypeManager from '../modules/maintenanceTypeManager.js'
 import ticketManager from '../modules/ticketManager.js'
 import carsManager from '../modules/carsManager.js';
+import { getUser } from '../modules/Helper.js';
+
 
 
 
@@ -27,6 +29,7 @@ class HomeDetail extends Component {
 
     state = {
         tickets: [],
+        userId: [],
         cars: [],
         carId: "0",
         timeStamp: "",
@@ -53,7 +56,8 @@ class HomeDetail extends Component {
                 message: this.state.message,
                 timeStamp: new Date(),
                 carId: Number(this.state.carId),
-                maintenanceTypeId: this.state.maintenanceType.id
+                maintenanceTypeId: this.state.maintenanceType.id,
+                userId: getUser().id
             };
             // Create the message and redirect user to ticket 
             ticketManager.post(ticket)
@@ -63,7 +67,7 @@ class HomeDetail extends Component {
 
     componentDidMount() {
         console.log(this.props.match.params.maintenanceTypeId)
-        ticketManager.getAll()
+        ticketManager.getAllUserTickets(getUser().id)
             .then(tickets => {
                 this.setState({ tickets: tickets })
             })

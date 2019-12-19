@@ -7,6 +7,9 @@ export default {
   getAll() {
     return fetch(`${remoteURL}/tickets?_expand=car&_expand=maintenanceType`).then(result => result.json())
   },
+  getAllUserTickets(id) {
+    return fetch(`${remoteURL}/tickets?userId=${id}&_expand=car&_expand=maintenanceType`).then(result => result.json())
+  },
   post(newTicket) {
     return fetch(`${remoteURL}/tickets`, {
       method: "POST",
