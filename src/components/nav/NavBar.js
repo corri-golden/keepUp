@@ -24,7 +24,7 @@ class Navbar extends Component {  //withrouter allows to have access to history 
                         <Nav.Link href="/tickets" to="/tickets">Tickets</Nav.Link>
                         <Link className="nav-link" to="/register">Register</Link>
                         <Link className="nav-link" to="/">Login</Link>
-                        <Link onClick={this.handleLogout}   className="nav-link" href="/login">Logout</Link>
+                        <Link onClick={this.handleLogout}   className="nav-link" to="/login">Logout</Link>
                     </Nav>
                     <Form inline>
                     </Form>

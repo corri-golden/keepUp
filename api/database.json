@@ -9,6 +9,36 @@
       "email": "me@me.com",
       "password": "1234",
       "id": 2
+    },
+    {
+      "email": "chaseman@man.com",
+      "password": "1234",
+      "id": 3
+    },
+    {
+      "email": "chasem@chase.com",
+      "password": "1234",
+      "id": 4
+    },
+    {
+      "email": "111@111.com",
+      "password": "1111",
+      "id": 5
+    },
+    {
+      "email": "you@you.com",
+      "password": "111",
+      "id": 6
+    },
+    {
+      "email": "bab@bab@com",
+      "password": "12345",
+      "id": 7
+    },
+    {
+      "email": "rose1@rose.com",
+      "password": "123",
+      "id": 8
     }
   ],
   "cars": [
@@ -16,7 +46,7 @@
       "id": 1,
       "carMake": "Nissan",
       "carModel": "Altima",
-      "userId": 1
+      "userId": 2
     },
     {
       "id": 2,
@@ -27,20 +57,20 @@
     {
       "id": 3,
       "carMake": "Toyota",
-      "carModel": "Pruis",
-      "userId": 1
+      "carModel": "Pruiss",
+      "userId": 3
     },
     {
       "id": 4,
       "carMake": "Chevy",
       "carModel": "Malibu",
-      "userId": 1
+      "userId": 3
     },
     {
       "id": 5,
       "carMake": "Dodge",
       "carModel": "Caravan",
-      "userId": 1
+      "userId": 3
     }
   ],
   "tickets": [
@@ -82,6 +112,38 @@
       "maintenanceTypeId": 5,
       "timeStamp": "2019-12-19T17:14:27.910Z",
       "userId": 2
+    },
+    {
+      "message": "wait i have tires",
+      "id": 35,
+      "carId": 2,
+      "maintenanceTypeId": 3,
+      "timeStamp": "2019-12-19T21:31:16.034Z",
+      "userId": 8
+    },
+    {
+      "message": "youy",
+      "timeStamp": "2019-12-19T21:47:00.083Z",
+      "carId": 5,
+      "maintenanceTypeId": 1,
+      "userId": 2,
+      "id": 36
+    },
+    {
+      "message": "ccc",
+      "timeStamp": "2019-12-19T22:19:21.921Z",
+      "carId": 2,
+      "maintenanceTypeId": 1,
+      "userId": 2,
+      "id": 37
+    },
+    {
+      "message": "heyyyy",
+      "timeStamp": "2019-12-19T22:25:24.951Z",
+      "carId": 2,
+      "maintenanceTypeId": 1,
+      "userId": 2,
+      "id": 38
     }
   ],
   "maintenanceTypes": [
