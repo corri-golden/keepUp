@@ -22,55 +22,67 @@ class Home extends Component {
     
     render() {
         return (
-            <Container className="imgWrap">
-                <Row noGutters={true}>
-                    <Col md={4}>
-                        <Card className="imgContainer">
-                            <Link to="/HomeDetail/1" value="Airbag Indicator"><img className="imgSize" src={require('./photos/Airbag Indicator.jpg')} alt="airbag" /></Link>
-                        </Card>
-                    </Col>
-                    <Col md={4}>
-                        <Card className="imgContainer">
-                            <Link to="/HomeDetail/2" value="Antilock Brake Warning"><img className="imgSize" src={require('./photos/AntilockBrakeWarning.jpeg')} alt="antiLock" /></Link>
-                        </Card>
-                    </Col>
-                    <Col md={4}>
-                        <div className="imgContainer">
-                            <Link to="/HomeDetail/3" value="Battery Alert"><img className="imgSize" src={require('./photos/BatteryAlert2.jpg')} alt="battery" /></Link>
-                        </div>
-                    </Col>
-                    <Col md={4}>
-                        <div className="imgContainer">
-                            <Link to="/HomeDetail/4" value="Engine Temperature"><img className="imgSize" src={require('./photos/Engine Tempature.jpg')} alt="battery" /></Link>
-                        </div>
-                    </Col>
-                    <Col md={4}>
-                        <div className="imgContainer">
-                            <Link to="/HomeDetail/5" value="Oil Pressure"><img className="imgSize" src={require('./photos/Oil Pressure.jpg')} alt="oil" /></Link>
-                        </div>
-                    </Col>
-                    <Col md={4}>
-                        <div className="imgContainer">
-                            <Link to="/HomeDetail/6" value="Tire Pressure"><img className="imgSize" src={require('./photos/TirePressure.jpeg')} alt="tire" /></Link>
-                        </div>
-                    </Col>
-                    <Col md={4}>
-                        <div className="imgContainer">
-                            <Link to="/HomeDetail/7" value="Traction Control"><img className="imgSize" src={require('./photos/Traction Control.jpg')} alt="tire" /></Link>
-                        </div>
-                    </Col>
-                    <Col md={4}>
-                        <div className="imgContainer">
-                            <Link to="/HomeDetail/8" value="Washer Fluid Indicator"><img className="imgSize" src={require('./photos/Washer Fluid Indicator.jpg')} alt="tire" /></Link>
-                        </div>
-                    </Col>
-                    <Col md={4}>
-                        <li className="nav-item">
-                            <Link to="/HomeDetail/9" value="Other" className="nav-link" >Other</Link>
-                        </li>
-                    </Col>
-                </Row>
-            </Container>
+            <div className="imgContainer">
+            <Link to="/HomeDetail/1" value="Airbag Indicator"><img className="imgSize" src={require('./photos/Airbag Indicator.jpg')} alt="airbag" /></Link>
+            <Link to="/HomeDetail/2" value="Antilock Brake Warning"><img className="imgSize" src={require('./photos/Antilock Brake Warning.jpg')} alt="antiLock" /></Link>  
+            <Link to="/HomeDetail/3" value="Battery Alert"><img className="imgSize" src={require('./photos/BatteryAlert2.jpg')} alt="battery" /></Link>
+            <Link to="/HomeDetail/4" value="Engine Temperature"><img className="imgSize" src={require('./photos/Engine Tempature.jpg')} alt="battery" /></Link>
+            <Link to="/HomeDetail/5" value="Oil Pressure"><img className="imgSize" src={require('./photos/Oil Pressure.jpg')} alt="oil" /></Link>
+            <Link to="/HomeDetail/6" value="Tire Pressure"><img className="imgSize" src={require('./photos/Tire Pressure Warning.jpg')} alt="tire" /></Link>
+            <Link to="/HomeDetail/7" value="Traction Control"><img className="imgSize" src={require('./photos/Traction Control.jpg')} alt="tire" /></Link>
+            <Link to="/HomeDetail/8" value="Washer Fluid Indicator"><img className="imgSize" src={require('./photos/Washer Fluid Indicator.jpg')} alt="tire" /></Link>
+            <Link to="/HomeDetail/9" value="Other" className="otherSize"> Other</Link>
+            </div>
+
+            // <Container className="imgWrap">
+            //     <Row noGutters={true}>
+            //         <Col md={4}>
+            //             <Card className="imgContainer">
+            //                 <Link to="/HomeDetail/1" value="Airbag Indicator"><img className="imgSize" src={require('./photos/Airbag Indicator.jpg')} alt="airbag" /></Link>
+            //             </Card>
+            //         </Col>
+            //         <Col md={4}>
+            //             <Card className="imgContainer">
+            //                 <Link to="/HomeDetail/2" value="Antilock Brake Warning"><img className="imgSize" src={require('./photos/AntilockBrakeWarning.jpeg')} alt="antiLock" /></Link>
+            //             </Card>
+            //         </Col>
+            //         <Col md={4}>
+            //             <div className="imgContainer">
+            //                 <Link to="/HomeDetail/3" value="Battery Alert"><img className="imgSize" src={require('./photos/BatteryAlert2.jpg')} alt="battery" /></Link>
+            //             </div>
+            //         </Col>
+            //         <Col md={4}>
+            //             <div className="imgContainer">
+            //                 <Link to="/HomeDetail/4" value="Engine Temperature"><img className="imgSize" src={require('./photos/Engine Tempature.jpg')} alt="battery" /></Link>
+            //             </div>
+            //         </Col>
+            //         <Col md={4}>
+            //             <div className="imgContainer">
+            //                 <Link to="/HomeDetail/5" value="Oil Pressure"><img className="imgSize" src={require('./photos/Oil Pressure.jpg')} alt="oil" /></Link>
+            //             </div>
+            //         </Col>
+            //         <Col md={4}>
+            //             <div className="imgContainer">
+            //                 <Link to="/HomeDetail/6" value="Tire Pressure"><img className="imgSize" src={require('./photos/TirePressure.jpeg')} alt="tire" /></Link>
+            //             </div>
+            //         </Col>
+            //         <Col md={4}>
+            //             <div className="imgContainer">
+            //                 <Link to="/HomeDetail/7" value="Traction Control"><img className="imgSize" src={require('./photos/Traction Control.jpg')} alt="tire" /></Link>
+            //             </div>
+            //         </Col>
+            //         <Col md={4}>
+            //             <div className="imgContainer">
+            //                 <Link to="/HomeDetail/8" value="Washer Fluid Indicator"><img className="imgSize" src={require('./photos/Washer Fluid Indicator.jpg')} alt="tire" /></Link>
+            //             </div>
+            //         </Col>
+            //         <Col md={4}>
+            //             <li className="nav-item">
+            //                 <Link to="/HomeDetail/9" value="Other" className="nav-link" >Other</Link>
+            //             </li>
+            //         </Col>
+            //     </Row>
+            // </Container>
         );
     }
 }

@@ -39,6 +39,11 @@
       "email": "rose1@rose.com",
       "password": "123",
       "id": 8
+    },
+    {
+      "email": "123@123.com",
+      "password": "123",
+      "id": 9
     }
   ],
   "cars": [
@@ -75,27 +80,11 @@
   ],
   "tickets": [
     {
-      "message": "yyy!!",
-      "id": 30,
-      "carId": 1,
-      "maintenanceTypeId": 1,
-      "timeStamp": "2019-12-16T19:56:25.925Z",
-      "userId": 1
-    },
-    {
       "message": "Please Chase!!!!mb",
       "id": 31,
       "carId": 4,
       "maintenanceTypeId": 5,
       "timeStamp": "2019-12-16T20:13:31.605Z"
-    },
-    {
-      "message": "Brakes are not working well.  They are squeaking bad and I'm mad.",
-      "id": 32,
-      "carId": 5,
-      "maintenanceTypeId": 3,
-      "timeStamp": "2019-12-19T15:08:13.779Z",
-      "userId": 1
     },
     {
       "message": "My prius isn't pruising",
@@ -144,6 +133,22 @@
       "maintenanceTypeId": 1,
       "userId": 2,
       "id": 38
+    },
+    {
+      "message": "The airbag indicator is on and I'm not sure if I will be protected if I wreck!!",
+      "timeStamp": "2019-12-23T16:05:04.666Z",
+      "carId": 2,
+      "maintenanceTypeId": 1,
+      "userId": 1,
+      "id": 42
+    },
+    {
+      "message": "The wheels keep coming off!",
+      "timeStamp": "2019-12-24T13:40:35.836Z",
+      "carId": 2,
+      "maintenanceTypeId": 2,
+      "userId": 1,
+      "id": 43
     }
   ],
   "maintenanceTypes": [
