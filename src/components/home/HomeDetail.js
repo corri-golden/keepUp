@@ -111,7 +111,7 @@ class HomeDetail extends Component {
                 <Form.Group>
                     <h3>{this.state.maintenanceType.name}</h3>
                 </Form.Group>
-                    <Form.Group className="col-md-12 form-group form-inline">
+                    <Form.Group>
                         <Form.Control as="select" id="carId" onChange={this.handleFieldChange}>
                         <option value="0"> Select A Car</option>
                             {this.state.cars.map(car => (
@@ -119,9 +119,9 @@ class HomeDetail extends Component {
                             ))}
                         </Form.Control>
                     </Form.Group>
-                <Form.Group>
+                <Form.Group controlId="exampleForm.ControlTextarea1">
                     <Form.Label>Comment</Form.Label>
-                    <Form.Control type="textarea" required onChange={this.handleFieldChange} name="text" id="message" />
+                    <Form.Control as="textarea" rows="3" type="textarea" required onChange={this.handleFieldChange} name="text" id="message" />
                 </Form.Group>
                 </Form>
                 <Button color="secondary" disabled={this.state.loadingStatus} onClick={this.constructNewTicket}>Submit</Button>
