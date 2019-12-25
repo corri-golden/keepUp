@@ -136,11 +136,11 @@
     },
     {
       "message": "The airbag indicator is on and I'm not sure if I will be protected if I wreck!!",
-      "timeStamp": "2019-12-23T16:05:04.666Z",
+      "id": 42,
       "carId": 2,
       "maintenanceTypeId": 1,
-      "userId": 1,
-      "id": 42
+      "timeStamp": "2019-12-23T16:05:04.666Z",
+      "userId": 1
     },
     {
       "message": "The wheels keep coming off!",
@@ -149,6 +149,30 @@
       "maintenanceTypeId": 2,
       "userId": 1,
       "id": 43
+    },
+    {
+      "message": "rtrt",
+      "timeStamp": "2019-12-25T02:40:47.558Z",
+      "carId": 2,
+      "maintenanceTypeId": 2,
+      "userId": 1,
+      "id": 44
+    },
+    {
+      "message": "bbj",
+      "timeStamp": "2019-12-25T02:42:05.314Z",
+      "carId": 2,
+      "maintenanceTypeId": 1,
+      "userId": 1,
+      "id": 45
+    },
+    {
+      "message": "What's up?",
+      "timeStamp": "2019-12-25T03:34:34.362Z",
+      "carId": 2,
+      "maintenanceTypeId": 2,
+      "userId": 1,
+      "id": 46
     }
   ],
   "maintenanceTypes": [
