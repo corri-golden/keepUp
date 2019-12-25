@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Button, Input, Form, Label, FormText, useAccordionToggle } from 'react-bootstrap';
+import { Button, Input, Form, Label, FormText, useAccordionToggle, Card } from 'react-bootstrap';
 import ticketManager from "../modules/ticketManager"
 import carsManager from "../modules/carsManager";
 import maintenanceTypeManager from "../modules/maintenanceTypeManager";
@@ -29,7 +29,7 @@ class HomeDetailEdit extends Component {    // responsible for filling in state 
     this.setState(stateToChange)
   }
 
-  updateExistingTicket = evt => {    
+  updateExistingTicket = evt => {
     evt.preventDefault()
     this.setState({ loadingStatus: true });
     const editedTicket = {
@@ -66,7 +66,7 @@ class HomeDetailEdit extends Component {    // responsible for filling in state 
           cars: cars
         })
       })
-      maintenanceTypeManager.getAll(this.props.match.params.maintenanceType)
+    maintenanceTypeManager.getAll(this.props.match.params.maintenanceType)
       .then((maintenanceTypes) => {
         this.setState({
           maintenanceTypes: maintenanceTypes
@@ -84,17 +84,17 @@ class HomeDetailEdit extends Component {    // responsible for filling in state 
     console.log(this.state)
     return (
       <>
-        <form>
+        <Card width="100%" className="shadow-lg p-3 mb-5 bg-white rounded">
           <fieldset>
             <Form.Group>
-              <Form.Label>Maintenance Type</Form.Label>
+              <Form.Label><h2>Maintenance Type</h2></Form.Label>
               <Form.Control as="select" id="maintenanceTypeId" onChange={this.handleFieldChange}>
                 {this.state.maintenanceTypes.map(maintenanceType => {
                   return <option value={maintenanceType.id} key={`select-option-${maintenanceType.name}`}>{maintenanceType.name}</option>
                 })}
               </Form.Control>
             </Form.Group>
-            <Form.Group className="col-md-12 form-group form-inline">
+            <Form.Group>
               <Form.Control value={this.state.carId} as="select" id="carId" onChange={this.handleFieldChange}>
                 {this.state.cars.map(car => {
                   return <option key={`select-option-${car.id}`} value={car.id}>{car.carMake} {car.carModel}</option>
@@ -103,24 +103,14 @@ class HomeDetailEdit extends Component {    // responsible for filling in state 
             </Form.Group>
 
 
-            <div className="formgrid">
-              <input
-                type="text"
-                required
-                className="form-control"
-                onChange={this.handleFieldChange}
-                id="message"
-                value={this.state.message}
-              />
+            <Form.Group>
+              <Form.Control as="textarea" rows="3" className="form-control" onChange={this.handleFieldChange} id="message" value={this.state.message}/>
               <label htmlFor="Maintenance"></label>
-              <button
-                type="button" disabled={this.state.loadingStatus}
-                onClick={this.updateExistingTicket}
-                className="btn btn-primary"
-              >Submit</button>
-            </div>
+              <Button variant="warning" disabled={this.state.loadingStatus} onClick={this.updateExistingTicket}
+                size="lg" block className="mt-3">Submit</Button>
+            </Form.Group>
           </fieldset>
-        </form>
+        </Card>
       </>
     );
   }

@@ -31,7 +31,7 @@ class Home extends Component {
             <Link to="/HomeDetail/6" value="Tire Pressure"><img className="imgSize" src={require('./photos/Tire Pressure Warning.jpg')} alt="tire" /></Link>
             <Link to="/HomeDetail/7" value="Traction Control"><img className="imgSize" src={require('./photos/Traction Control.jpg')} alt="tire" /></Link>
             <Link to="/HomeDetail/8" value="Washer Fluid Indicator"><img className="imgSize" src={require('./photos/Washer Fluid Indicator.jpg')} alt="tire" /></Link>
-            <Link to="/HomeDetail/9" value="Other" className="otherSize"> Other</Link>
+            <Link to="/HomeDetail/9" value="question"><img className="imgSize" src={require('./photos/question1.jpg')} alt="question"/> </Link>
             </div>
 
             // <Container className="imgWrap">

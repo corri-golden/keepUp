@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Input, Form, Label, FormText } from 'react-bootstrap';
+import { Button, Input, Form, Label, FormText, Card } from 'react-bootstrap';
 import maintenanceTypeManager from '../modules/maintenanceTypeManager.js'
 import ticketManager from '../modules/ticketManager.js'
 import carsManager from '../modules/carsManager.js';
@@ -107,7 +107,7 @@ class HomeDetail extends Component {
         console.log(this.state)
         return (
                 <>
-                <Form>
+                <Card width="100%" className="shadow-lg p-3 mb-5 bg-white rounded">
                 <Form.Group>
                     <h3>{this.state.maintenanceType.name}</h3>
                 </Form.Group>
@@ -120,11 +120,11 @@ class HomeDetail extends Component {
                         </Form.Control>
                     </Form.Group>
                 <Form.Group controlId="exampleForm.ControlTextarea1">
-                    <Form.Label>Comment</Form.Label>
+                    <Form.Label><h4>Comment</h4></Form.Label>
                     <Form.Control as="textarea" rows="3" type="textarea" required onChange={this.handleFieldChange} name="text" id="message" />
                 </Form.Group>
-                </Form>
-                <Button color="secondary" disabled={this.state.loadingStatus} onClick={this.constructNewTicket}>Submit</Button>
+                <Button variant="warning" disabled={this.state.loadingStatus} onClick={this.constructNewTicket}>Submit</Button>
+                </Card>
                 </>
            )
     }

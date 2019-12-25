@@ -22,7 +22,7 @@ class Tickets extends Component {
                         <Button variant="danger" onClick={() => this.props.deleteTicket(this.props.ticket.id)} size="lg">
                             Delete
                             </Button>
-                        <Button border="secondary" className="mt-3" variant="warning" onClick={() => { this.props.history.push(`/tickets/${this.props.ticket.id}/edit`) }} size="lg">Edit</Button>
+                        <Button border="primary" className="mt-3" variant="warning" onClick={() => { this.props.history.push(`/tickets/${this.props.ticket.id}/edit`) }} size="lg">Edit</Button>
                         </div>
                     </Card.Body>
                     
