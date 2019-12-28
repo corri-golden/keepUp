@@ -44,28 +44,50 @@ class Login extends Component {
 
   render() {
     return (
-        <div className="mt-5" onSubmit={this.handleReg}>
-          <center><h1>KeepUp</h1></center>
-          <form>
-            <Form.Group>
-              <Form.Control className="formgrid" onSubmit={this.handleLogin} type="email"
-                    id="email"
-                    placeholder="Email address"
-                    required="" autoFocus="" />
-            </Form.Group>
-                <Form.Group>
-                  <Form.Control onChange={this.handleFieldChange} type="password"
-                    id="password"
-                    placeholder="Password"
-                    required="" />
-              </Form.Group>
-                <Button className="center" variant="warning" type="submit" block>Sign in
+
+      // <form onSubmit={this.handleLogin}>
+      //   <fieldset>
+      //     <h3>Please sign in</h3>
+      //     <div className="formgrid">
+      //       <input onChange={this.handleFieldChange} type="email"
+      //         id="email"
+      //         placeholder="Email address"
+      //         required="" autoFocus="" />
+      //       <label htmlFor="inputEmail">Email address</label>
+      //       <input onChange={this.handleFieldChange} type="password"
+      //         id="password"
+      //         placeholder="Password"
+      //         required="" />
+      //       <label htmlFor="inputPassword">Password</label>
+      //     </div>
+      //     <button type="submit">Sign in
+      //       </button>
+      //   </fieldset>
+      // </form>
+
+
+      <div className="mt-5" onSubmit={this.handleLogin}>
+        <center><h1>KeepUp</h1></center>
+        <form>
+          <Form.Group>
+            <Form.Control className="formgrid" onChange={this.handleFieldChange} type="email"
+              id="email"
+              placeholder="Email address"
+              required="" autoFocus="" />
+          </Form.Group>
+          <Form.Group>
+            <Form.Control onChange={this.handleFieldChange} type="password"
+              id="password"
+              placeholder="Password"
+              required="" />
+          </Form.Group>
+          <Button className="center" variant="warning" type="submit" block>Sign in
               </Button>
-          </form>
-        </div>
+        </form>
+      </div>
           )
-        }
-      
-      }
-      
+  }
+
+}
+
 export default Login

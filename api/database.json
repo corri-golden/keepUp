@@ -49,6 +49,16 @@
       "email": "seedofabba@yahoo.com",
       "password": "Myfather7",
       "id": 10
+    },
+    {
+      "email": "sam@sam.com",
+      "password": "1234",
+      "id": 11
+    },
+    {
+      "email": "lina@lina.com",
+      "password": "12345",
+      "id": 12
     }
   ],
   "cars": [
@@ -146,6 +156,22 @@
       "maintenanceTypeId": 1,
       "timeStamp": "2019-12-23T16:05:04.666Z",
       "userId": 1
+    },
+    {
+      "message": "The axel is a little busted.",
+      "timeStamp": "2019-12-28T23:56:47.958Z",
+      "carId": 2,
+      "maintenanceTypeId": 3,
+      "userId": 1,
+      "id": 43
+    },
+    {
+      "message": "I hate plants.",
+      "timeStamp": "2019-12-28T23:57:43.508Z",
+      "carId": 2,
+      "maintenanceTypeId": 9,
+      "userId": 1,
+      "id": 44
     }
   ],
   "maintenanceTypes": [
