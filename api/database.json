@@ -44,6 +44,11 @@
       "email": "123@123.com",
       "password": "123",
       "id": 9
+    },
+    {
+      "email": "seedofabba@yahoo.com",
+      "password": "Myfather7",
+      "id": 10
     }
   ],
   "cars": [
@@ -141,38 +146,6 @@
       "maintenanceTypeId": 1,
       "timeStamp": "2019-12-23T16:05:04.666Z",
       "userId": 1
-    },
-    {
-      "message": "The wheels keep coming off!",
-      "timeStamp": "2019-12-24T13:40:35.836Z",
-      "carId": 2,
-      "maintenanceTypeId": 2,
-      "userId": 1,
-      "id": 43
-    },
-    {
-      "message": "rtrt",
-      "timeStamp": "2019-12-25T02:40:47.558Z",
-      "carId": 2,
-      "maintenanceTypeId": 2,
-      "userId": 1,
-      "id": 44
-    },
-    {
-      "message": "bbj",
-      "timeStamp": "2019-12-25T02:42:05.314Z",
-      "carId": 2,
-      "maintenanceTypeId": 1,
-      "userId": 1,
-      "id": 45
-    },
-    {
-      "message": "What's up?",
-      "timeStamp": "2019-12-25T03:34:34.362Z",
-      "carId": 2,
-      "maintenanceTypeId": 2,
-      "userId": 1,
-      "id": 46
     }
   ],
   "maintenanceTypes": [
