@@ -29,7 +29,8 @@ class Login extends Component {
             this.props.setUser({
               id: user.id,
               email: this.state.email,
-              password: this.state.password
+              password: this.state.password,
+              isAdmin: user.isAdmin
             })
             login = true
             this.props.history.push("/")

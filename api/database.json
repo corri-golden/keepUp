@@ -1,23 +1,16 @@
 {
-  "admins": [
-    {
-      "id": 1,
-      "email": "admin@admin.com",
-      "password": "123"
-    }
-  ],
   "users": [
     {
       "id": 1,
       "email": "us@us.com",
       "password": "123",
-      "adminId": 1
+      "isAdmin": false
     },
     {
-      "email": "me@me.com",
+      "isAdmin": true,
+      "email": "admin@admin.com",
       "password": "1234",
-      "id": 2,
-      "adminId": 1
+      "id": 2
     }
   ],
   "cars": [
@@ -131,6 +124,22 @@
       "maintenanceTypeId": 9,
       "userId": 1,
       "id": 44
+    },
+    {
+      "message": "Yo Yo",
+      "timeStamp": "2019-12-30T18:27:32.953Z",
+      "carId": 2,
+      "maintenanceTypeId": 1,
+      "userId": 1,
+      "id": 45
+    },
+    {
+      "message": "New Car",
+      "timeStamp": "2019-12-30T18:28:09.423Z",
+      "carId": 2,
+      "maintenanceTypeId": 2,
+      "userId": 1,
+      "id": 46
     }
   ],
   "maintenanceTypes": [
