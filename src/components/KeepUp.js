@@ -7,10 +7,10 @@ class KeepUp extends Component {
   state = {
     user: false,
   }
-  isAuthenticated = () => localStorage.getItem("credentials") !== null
+  isAuthenticated = () => sessionStorage.getItem("credentials") !== null
 
   setUser = (authObj) => {
-    localStorage.setItem(
+    sessionStorage.setItem(
       "credentials",
       JSON.stringify(authObj)
     )
@@ -19,7 +19,7 @@ class KeepUp extends Component {
     });
   }
   clearUser = () => {
-    localStorage.removeItem("credentials")
+    sessionStorage.removeItem("credentials")
     this.setState({ user: this.isAuthenticated() })
   }
   componentDidMount() {
