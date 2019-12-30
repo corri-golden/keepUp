@@ -1,49 +1,23 @@
 {
+  "admins": [
+    {
+      "id": 1,
+      "email": "admin@admin.com",
+      "password": "123"
+    }
+  ],
   "users": [
     {
       "id": 1,
       "email": "us@us.com",
-      "password": "123"
+      "password": "123",
+      "adminId": 1
     },
     {
       "email": "me@me.com",
       "password": "1234",
-      "id": 2
-    },
-    {
-      "email": "chaseman@man.com",
-      "password": "1234",
-      "id": 3
-    },
-    {
-      "email": "chasem@chase.com",
-      "password": "1234",
-      "id": 4
-    },
-    {
-      "email": "111@111.com",
-      "password": "1111",
-      "id": 5
-    },
-    {
-      "email": "you@you.com",
-      "password": "111",
-      "id": 6
-    },
-    {
-      "email": "bab@bab@com",
-      "password": "12345",
-      "id": 7
-    },
-    {
-      "email": "rose1@rose.com",
-      "password": "123",
-      "id": 8
-    },
-    {
-      "email": "123@123.com",
-      "password": "123",
-      "id": 9
+      "id": 2,
+      "adminId": 1
     }
   ],
   "cars": [
@@ -143,36 +117,20 @@
       "userId": 1
     },
     {
-      "message": "The wheels keep coming off!",
-      "timeStamp": "2019-12-24T13:40:35.836Z",
+      "message": "The axel is a little busted.",
+      "timeStamp": "2019-12-28T23:56:47.958Z",
       "carId": 2,
-      "maintenanceTypeId": 2,
+      "maintenanceTypeId": 3,
       "userId": 1,
       "id": 43
     },
     {
-      "message": "rtrt",
-      "timeStamp": "2019-12-25T02:40:47.558Z",
+      "message": "I hate plants.",
+      "timeStamp": "2019-12-28T23:57:43.508Z",
       "carId": 2,
-      "maintenanceTypeId": 2,
+      "maintenanceTypeId": 9,
       "userId": 1,
       "id": 44
-    },
-    {
-      "message": "bbj",
-      "timeStamp": "2019-12-25T02:42:05.314Z",
-      "carId": 2,
-      "maintenanceTypeId": 1,
-      "userId": 1,
-      "id": 45
-    },
-    {
-      "message": "What's up?",
-      "timeStamp": "2019-12-25T03:34:34.362Z",
-      "carId": 2,
-      "maintenanceTypeId": 2,
-      "userId": 1,
-      "id": 46
     }
   ],
   "maintenanceTypes": [

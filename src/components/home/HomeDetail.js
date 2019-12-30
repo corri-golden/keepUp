@@ -119,7 +119,7 @@ class HomeDetail extends Component {
                             ))}
                         </Form.Control>
                     </Form.Group>
-                <Form.Group controlId="exampleForm.ControlTextarea1">
+                <Form.Group>
                     <Form.Label><h4>Comment</h4></Form.Label>
                     <Form.Control as="textarea" rows="3" type="textarea" required onChange={this.handleFieldChange} name="text" id="message" />
                 </Form.Group>

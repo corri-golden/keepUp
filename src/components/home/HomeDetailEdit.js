@@ -59,7 +59,7 @@ class HomeDetailEdit extends Component {    // responsible for filling in state 
           timeStamp: ticket.timeStamp
         });
       });
-    const currentUser = JSON.parse(localStorage.getItem("credentials"))
+    const currentUser = JSON.parse(sessionStorage.getItem("credentials"))
     carsManager.getAllUserCars(getUser().id)
       .then((cars) => {
         this.setState({

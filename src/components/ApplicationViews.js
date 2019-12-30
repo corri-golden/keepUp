@@ -18,7 +18,7 @@ import Reg from './Auth/Reg.js'
 
 class ApplicationViews extends Component {   //adding /1 extension to pass it to the props to home detail.  change homedetail route.
 
-    isAuthenticated = () => localStorage.getItem("credentials") !== null
+    isAuthenticated = () => sessionStorage.getItem("credentials") !== null
 
     render() {  //i'm not using the keepUp.  It is home.
         return (
