@@ -11,6 +11,12 @@
       "email": "admin@admin.com",
       "password": "1234",
       "id": 2
+    },
+    {
+      "isAdmin": false,
+      "email": "we@we.com",
+      "password": "1234",
+      "id": 3
     }
   ],
   "cars": [
@@ -18,72 +24,23 @@
       "id": 1,
       "carMake": "Nissan",
       "carModel": "Altima",
-      "userId": 2
+      "userId": 3
     },
     {
       "id": 2,
       "carMake": "Toyota",
       "carModel": "Camry",
       "userId": 1
-    },
-    {
-      "id": 3,
-      "carMake": "Toyota",
-      "carModel": "Pruiss",
-      "userId": 3
-    },
-    {
-      "id": 4,
-      "carMake": "Chevy",
-      "carModel": "Malibu",
-      "userId": 3
-    },
-    {
-      "id": 5,
-      "carMake": "Dodge",
-      "carModel": "Caravan",
-      "userId": 3
     }
   ],
   "tickets": [
-    {
-      "message": "Please Chase!!!!mb",
-      "id": 31,
-      "carId": 4,
-      "maintenanceTypeId": 5,
-      "timeStamp": "2019-12-16T20:13:31.605Z"
-    },
-    {
-      "message": "My prius isn't pruising",
-      "timeStamp": "2019-12-19T17:14:00.612Z",
-      "carId": 3,
-      "maintenanceTypeId": 1,
-      "userId": 2,
-      "id": 33
-    },
-    {
-      "message": "My batteries keeps dying and I'm stranded on Dickerson Pike.  Help!!!!vv",
-      "id": 34,
-      "carId": 4,
-      "maintenanceTypeId": 5,
-      "timeStamp": "2019-12-19T17:14:27.910Z",
-      "userId": 2
-    },
     {
       "message": "wait i have tires",
       "id": 35,
       "carId": 2,
       "maintenanceTypeId": 3,
       "timeStamp": "2019-12-19T21:31:16.034Z",
-      "userId": 8
-    },
-    {
-      "message": "youy",
-      "timeStamp": "2019-12-19T21:47:00.083Z",
-      "carId": 5,
-      "maintenanceTypeId": 1,
-      "userId": 2,
-      "id": 36
+      "userId": 1
     },
     {
       "message": "ccc",
@@ -126,20 +83,12 @@
       "id": 44
     },
     {
-      "message": "Yo Yo",
-      "timeStamp": "2019-12-30T18:27:32.953Z",
-      "carId": 2,
-      "maintenanceTypeId": 1,
-      "userId": 1,
+      "message": "Car is smoking.  Bad",
+      "timeStamp": "2019-12-31T21:19:56.039Z",
+      "carId": 1,
+      "maintenanceTypeId": 4,
+      "userId": 3,
       "id": 45
-    },
-    {
-      "message": "New Car",
-      "timeStamp": "2019-12-30T18:28:09.423Z",
-      "carId": 2,
-      "maintenanceTypeId": 2,
-      "userId": 1,
-      "id": 46
     }
   ],
   "maintenanceTypes": [
