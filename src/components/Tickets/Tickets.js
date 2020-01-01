@@ -13,10 +13,12 @@ class Tickets extends Component {
         return (
             <>
                 <Card width="100%" className="shadow-lg p-3 mb-5 bg-white rounded">
+                <Card.Text border="secondary">{this.props.ticket.user.email}</Card.Text>
                     <Card.Header><h1>{this.props.ticket.maintenanceType.name}</h1></Card.Header>
                     <Card.Body>
                         <Card.Title><h3>{this.props.ticket.car.carMake} {this.props.ticket.car.carModel}</h3></Card.Title>
                         <div className="d-flex flex-column">
+                        
                         <Card.Text border="secondary" bg="primary" rows="3">{this.props.ticket.message}</Card.Text>
 
                         <Button variant="danger" onClick={() => this.props.deleteTicket(this.props.ticket.id)} size="lg">

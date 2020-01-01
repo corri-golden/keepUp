@@ -2,13 +2,13 @@ const remoteURL = "http://localhost:5002"
 
 export default {
   get(id) {
-    return fetch(`${remoteURL}/tickets/${id}?_expand=car&_expand=maintenanceType`).then(result => result.json())
+    return fetch(`${remoteURL}/tickets/${id}?_expand=car&_expand=maintenanceType&_expand=user`).then(result => result.json())
   },
   getAll() {
-    return fetch(`${remoteURL}/tickets?_expand=car&_expand=maintenanceType`).then(result => result.json())
+    return fetch(`${remoteURL}/tickets?_expand=car&_expand=maintenanceType&_expand=user`).then(result => result.json())
   },
   getAllUserTickets(id) {
-    return fetch(`${remoteURL}/tickets?userId=${id}&_expand=car&_expand=maintenanceType`).then(result => result.json())
+    return fetch(`${remoteURL}/tickets?userId=${id}&_expand=car&_expand=maintenanceType&_expand=user`).then(result => result.json())
   },
   post(newTicket) {
     return fetch(`${remoteURL}/tickets`, {

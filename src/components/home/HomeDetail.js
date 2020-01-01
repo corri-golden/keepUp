@@ -29,7 +29,7 @@ class HomeDetail extends Component {
 
     state = {
         tickets: [],
-        userId: [],
+        users: [],
         cars: [],
         carId: "0",
         timeStamp: "",
