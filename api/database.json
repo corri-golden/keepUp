@@ -2,19 +2,19 @@
   "users": [
     {
       "id": 1,
-      "email": "us@us.com",
+      "userName": "daveCherry",
       "password": "123",
       "isAdmin": false
     },
     {
       "isAdmin": true,
-      "email": "admin@admin.com",
+      "userName": "Admin",
       "password": "1234",
       "id": 2
     },
     {
       "isAdmin": false,
-      "email": "we@we.com",
+      "userName": "ChrisWord",
       "password": "1234",
       "id": 3
     }
@@ -59,36 +59,20 @@
       "id": 38
     },
     {
-      "message": "The airbag indicator is on and I'm not sure if I will be protected if I wreck!!",
-      "id": 42,
-      "carId": 2,
-      "maintenanceTypeId": 1,
-      "timeStamp": "2019-12-23T16:05:04.666Z",
-      "userId": 1
-    },
-    {
-      "message": "The axel is a little busted.",
-      "timeStamp": "2019-12-28T23:56:47.958Z",
-      "carId": 2,
-      "maintenanceTypeId": 3,
-      "userId": 1,
-      "id": 43
-    },
-    {
-      "message": "I hate plants.",
-      "timeStamp": "2019-12-28T23:57:43.508Z",
-      "carId": 2,
-      "maintenanceTypeId": 9,
-      "userId": 1,
-      "id": 44
-    },
-    {
       "message": "Car is smoking.  Bad",
       "timeStamp": "2019-12-31T21:19:56.039Z",
       "carId": 1,
       "maintenanceTypeId": 4,
       "userId": 3,
       "id": 45
+    },
+    {
+      "message": "We got robbed.",
+      "timeStamp": "2020-01-01T23:28:02.870Z",
+      "carId": 1,
+      "maintenanceTypeId": 1,
+      "userId": 3,
+      "id": 46
     }
   ],
   "maintenanceTypes": [

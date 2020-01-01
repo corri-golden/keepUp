@@ -10,7 +10,7 @@ class Login extends Component {
 
 
   state = {
-    email: "",
+    userName: "",
     password: ""
   }
   handleFieldChange = (evt) => {
@@ -25,10 +25,10 @@ class Login extends Component {
       .then(usersArray => {
         let login = false
         usersArray.map(user => {
-          if (user.email === this.state.email && user.password === this.state.password) {
+          if (user.userName === this.state.userName && user.password === this.state.password) {
             this.props.setUser({
               id: user.id,
-              email: this.state.email,
+              userName: this.state.userName,
               password: this.state.password,
               isAdmin: user.isAdmin
             })
@@ -71,9 +71,9 @@ class Login extends Component {
         <center><h1>KeepUp</h1></center>
         <form>
           <Form.Group>
-            <Form.Control className="formgrid" onChange={this.handleFieldChange} type="email"
-              id="email"
-              placeholder="Email address"
+            <Form.Control className="formgrid" onChange={this.handleFieldChange} type="userName"
+              id="userName"
+              placeholder="User Name"
               required="" autoFocus="" />
           </Form.Group>
           <Form.Group>

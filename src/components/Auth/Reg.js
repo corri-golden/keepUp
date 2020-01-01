@@ -9,7 +9,7 @@ class Reg extends Component {
 
   // Set initial state
   state = {
-    email: "",
+    userName: "",
     password: "",
     confirmPass: "",
     loadingStatus: false
@@ -23,12 +23,12 @@ class Reg extends Component {
   }
   constructNewUser = evt => {    //create a new user
     evt.preventDefault();
-    if (this.state.email === "" || this.state.password === "" || this.state.confirmPass !== this.state.password) {
+    if (this.state.userName === "" || this.state.password === "" || this.state.confirmPass !== this.state.password) {
       window.alert("oh no");
     } else {
       this.setState({ loadingStatus: true });
       const user = {
-        email: this.state.email,
+        userName: this.state.userName,
         password: this.state.password,
 
 
@@ -41,7 +41,7 @@ class Reg extends Component {
   handleReg = (e) => {
     e.preventDefault()
     this.props.newUser({
-      email: this.state.email,
+      userName: this.state.userName,
       password: this.state.password
     })
     this.props.history.push("/");
@@ -70,9 +70,9 @@ class Reg extends Component {
           <center><h1>KeepUp</h1></center>
           <form>
             <Form.Group>
-            <Form.Control className="mt-3" onChange={this.handleFieldChange} type="email"
-              id="email"
-              placeholder="Email address"
+            <Form.Control className="mt-3" onChange={this.handleFieldChange} type="userName"
+              id="userName"
+              placeholder="User Name"
               required="" autoFocus="" />
             
             </Form.Group>
