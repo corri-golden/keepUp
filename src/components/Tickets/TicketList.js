@@ -12,7 +12,7 @@ class TicketList extends Component {
 
     state = {
         tickets: [],
-        email: "",
+        userName: "",
         user: [],
     }
 
