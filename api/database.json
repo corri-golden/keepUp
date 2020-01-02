@@ -73,6 +73,14 @@
       "maintenanceTypeId": 1,
       "userId": 3,
       "id": 46
+    },
+    {
+      "message": "What's up",
+      "timeStamp": "2020-01-02T14:34:20.808Z",
+      "carId": 1,
+      "maintenanceTypeId": 2,
+      "userId": 3,
+      "id": 47
     }
   ],
   "maintenanceTypes": [
@@ -111,6 +119,23 @@
     {
       "id": 9,
       "name": "Other"
+    }
+  ],
+  "weeklySummaries": [
+    {
+      "id": 1,
+      "date": "1/3/2020",
+      "mileage": 220000,
+      "userId": 1,
+      "recommendations": "Shampoo the car"
+    },
+    {
+      "recommendations": "Howdy",
+      "date": "2020-01-03",
+      "carId": 1,
+      "userId": 3,
+      "id": 3,
+      "mileage": 32000
     }
   ]
 }
