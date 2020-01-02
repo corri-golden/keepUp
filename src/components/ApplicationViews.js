@@ -9,6 +9,8 @@ import HomeDetailEdit from './home/HomeDetailEdit'
 import Login from './Auth/Login.js'
 import Reg from './Auth/Reg.js'
 import WeeklySummaryList from './WeeklySummary/WeeklySummaryList.js';
+import WeeklySummaryForm from './WeeklySummary/WeeklySummaryForm.js'
+
 
 
 
@@ -25,13 +27,13 @@ class ApplicationViews extends Component {   //adding /1 extension to pass it to
     render() {  //i'm not using the keepUp.  It is home.
         return (
             <React.Fragment>
-                <Route path= "/login" render = {props =>{
-                    return <Login setUser={this.props.setUser}{...props}/>
-                }}/>
+                <Route path="/login" render={props => {
+                    return <Login setUser={this.props.setUser}{...props} />
+                }} />
                 <Route
-                exact path="/register" render={props => {
-                return <Reg setUser={this.props.setUser} {...props} />
-                }}
+                    exact path="/register" render={props => {
+                        return <Reg setUser={this.props.setUser} {...props} />
+                    }}
                 />
                 <Route exact path="/" render={(props) => {
                     if (this.isAuthenticated()) {
@@ -42,7 +44,7 @@ class ApplicationViews extends Component {   //adding /1 extension to pass it to
                 }} />
                 <Route path="/keepUp" render={(props) => {
                     return <KeepUp />
-                    }} /> 
+                }} />
                 <Route path="/homeDetail/:maintenanceTypeId(\d+)" render={(props) => {
                     return <HomeDetail {...props} />
                 }} />
@@ -53,9 +55,16 @@ class ApplicationViews extends Component {   //adding /1 extension to pass it to
                         return <Redirect to="/login" />
                     }
                 }} />
-                <Route exact path="/weeklySummaryList" render={(props) => {
+                <Route exact path="/weeklySummaries" render={props => {
                     if (this.isAuthenticated()) {
                         return <WeeklySummaryList {...props} />
+                    } else {
+                        return <Redirect to="/" />
+                    }
+                }} />
+                <Route exact path="/weeklySummaries/new" render={(props) => {
+                    if (this.isAuthenticated()) {
+                        return <WeeklySummaryForm {...props} />
                     } else {
                         return <Redirect to="/login" />
                     }

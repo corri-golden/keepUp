@@ -73,6 +73,14 @@
       "maintenanceTypeId": 1,
       "userId": 3,
       "id": 46
+    },
+    {
+      "message": "What's up",
+      "timeStamp": "2020-01-02T14:34:20.808Z",
+      "carId": 1,
+      "maintenanceTypeId": 2,
+      "userId": 3,
+      "id": 47
     }
   ],
   "maintenanceTypes": [
@@ -127,6 +135,20 @@
       "mileage": 320000,
       "userId": 3,
       "recommendations": "Wash the Car"
+    },
+    {
+      "recommendations": "The car smells really bad.  Needs to be shampooed.",
+      "date": "2020-01-02",
+      "carId": 1,
+      "userId": 3,
+      "id": 3
+    },
+    {
+      "recommendations": "ddddd",
+      "date": "2020-01-03",
+      "carId": 1,
+      "userId": 3,
+      "id": 4
     }
   ]
 }

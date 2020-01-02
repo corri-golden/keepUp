@@ -1,8 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component, Link } from 'react'
 import weeklySummaryManager from '../modules/weeklySummaryManager'
 import { getUser } from "../modules/Helper"
 import usersManager from "../modules/usersManager"
 import WeeklySummary from "./WeeklySummary"
+import { Card, Form, Button } from 'react-bootstrap'
 
 
 
@@ -57,7 +58,10 @@ class WeeklySummaryList extends Component {
         console.log("render")
         console.log(this.deleteWeeklySummary)
         return (
+            <>
+            <Button variant="warning" type="button" onClick={() => {this.props.history.push("/weeklySummaries/new")}} >Add Weekly Summary</Button>
             <div className="container-cards">
+                    
                 {this.state.weeklySummaries.map(weeklySummary =>
                     <WeeklySummary
                         key={weeklySummary.id}
@@ -67,9 +71,16 @@ class WeeklySummaryList extends Component {
                     />
                 )}
             </div>
+            </>
         );
     }
 
 }
+
+{/* <button type="button"
+                        className="btn"
+                        onClick={() => { this.groups.history.push("/weeklySummaries/new") }}>
+                    </button>
+                    <Link to={`/weeklySummaries/new`}>Add Weekly Summary</Link> */}
 
 export default WeeklySummaryList

@@ -22,7 +22,7 @@ class Navbar extends Component {  //withrouter allows to have access to history 
                 <NavBar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
                         <Nav.Link href="/tickets" to="/tickets">Tickets</Nav.Link>
-                        <Nav.Link href="/weeklySummaryList" to="/weeklySummaryList">Weekly Summary</Nav.Link>
+                        <Nav.Link href="/weeklySummaries" to="/weeklySummaries">Weekly Summary</Nav.Link>
                         {(this.props.isAuthenticated())
                         ?
                         <Link onClick={this.handleLogout}   className="nav-link" to="/login">Logout</Link>
