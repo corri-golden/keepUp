@@ -8,6 +8,8 @@ import TicketList from './Tickets/TicketList'
 import HomeDetailEdit from './home/HomeDetailEdit'
 import Login from './Auth/Login.js'
 import Reg from './Auth/Reg.js'
+import WeeklySummaryList from './WeeklySummary/WeeklySummaryList.js';
+
 
 
 
@@ -47,6 +49,13 @@ class ApplicationViews extends Component {   //adding /1 extension to pass it to
                 <Route exact path="/tickets" render={(props) => {
                     if (this.isAuthenticated()) {
                         return <TicketList {...props} />
+                    } else {
+                        return <Redirect to="/login" />
+                    }
+                }} />
+                <Route exact path="/weeklySummaryList" render={(props) => {
+                    if (this.isAuthenticated()) {
+                        return <WeeklySummaryList {...props} />
                     } else {
                         return <Redirect to="/login" />
                     }
