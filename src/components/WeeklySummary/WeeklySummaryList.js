@@ -11,7 +11,8 @@ import { Card, Form, Button } from 'react-bootstrap'
 class WeeklySummaryList extends Component {
 
     state = {
-        weeklySummaries: []
+        weeklySummaries: [],
+        mileage: "",
     }
 
     componentDidMount() {
@@ -43,7 +44,7 @@ class WeeklySummaryList extends Component {
     deleteWeeklySummary = id => {                // needs to match what's being passed below with the delete variable
         weeklySummaryManager.delete(id)
             .then(() => {
-                weeklySummaryManager.getAllUserWeeklySummaries(getUser().id)
+                weeklySummaryManager.getAllUserWeeklySummary(getUser().id)
                     .then((newWeeklySummaries) => {
                         this.setState({
                             weeklySummaries: newWeeklySummaries

@@ -16,6 +16,8 @@ class WeeklySummaryForm extends Component {
         weeklySummaries: [],
         recommendations: "",
         cars: [],
+        mileage: "",
+        tickets: [],
     };
 
     handleFieldChange = evt => {
@@ -36,11 +38,13 @@ class WeeklySummaryForm extends Component {
                 recommendations: this.state.recommendations,
                 date: this.state.date,
                 carId: Number(this.state.carId),
-                userId: getUser().id
+                userId: getUser().id,
+                mileage: this.state.mileage
             };
             // Create the message and redirect user to ticket 
             weeklySummaryManager.post(weeklySummary)
-                .then(() => this.props.history.push("/weeklySummary"))
+                .then(() => this.props.history.push("/weeklySummaries"))
+                console.log("yop", weeklySummary)
         }
     };
 
@@ -54,6 +58,11 @@ class WeeklySummaryForm extends Component {
             .then(cars => {
                 console.log("carsManager", carsManager)
                 this.setState({ cars: cars })
+            })
+        weeklySummaryManager.getAllUserWeeklySummary(getUser().id)
+            .then(weeklySummaries => {
+                console.log("yop", weeklySummaryManager)
+                this.setState({weeklySummaries: weeklySummaries})
             })
     }
 
@@ -75,7 +84,7 @@ class WeeklySummaryForm extends Component {
                     </Form.Group>
                     <Form.Group>
                         <h4>Mileage</h4>
-                        <Form.Control type="text" id="name" onChange={this.handleFieldChange} />
+                        <Form.Control type="text" id="mileage" onChange={this.handleFieldChange} />
                     </Form.Group>
                     <Form.Group>
                         <h4>Date</h4>

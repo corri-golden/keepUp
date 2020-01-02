@@ -8,7 +8,7 @@ export default {
       return fetch(`${remoteURL}/weeklySummaries?_expand=car&_expand=maintenanceType&_expand=user`).then(result => result.json())
     },
     getAllUserWeeklySummary(id) {
-      return fetch(`${remoteURL}/weeklySummaries?userId=${id}`).then(result => result.json())
+      return fetch(`${remoteURL}/weeklySummaries?userId=${id}&_expand=user`).then(result => result.json())
     },
     post(newWeeklySummary) {
       return fetch(`${remoteURL}/weeklySummaries`, {

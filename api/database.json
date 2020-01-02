@@ -130,25 +130,12 @@
       "recommendations": "Shampoo the car"
     },
     {
-      "id": 2,
-      "date": "1/3/2020",
-      "mileage": 320000,
-      "userId": 3,
-      "recommendations": "Wash the Car"
-    },
-    {
-      "recommendations": "The car smells really bad.  Needs to be shampooed.",
-      "date": "2020-01-02",
-      "carId": 1,
-      "userId": 3,
-      "id": 3
-    },
-    {
-      "recommendations": "ddddd",
+      "recommendations": "Howdy",
       "date": "2020-01-03",
       "carId": 1,
       "userId": 3,
-      "id": 4
+      "id": 3,
+      "mileage": 32000
     }
   ]
 }
