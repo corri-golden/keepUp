@@ -124,18 +124,43 @@
   "weeklySummaries": [
     {
       "id": 1,
-      "date": "1/3/2020",
+      "date": "2020-01-13",
       "mileage": 220000,
       "userId": 1,
-      "recommendations": "Shampoo the car"
+      "recommendations": "Shampoo the car",
+      "carId": 1
     },
     {
-      "recommendations": "Howdy",
-      "date": "2020-01-03",
+      "recommendations": "Pleassssseeee!!!!zzzz",
+      "id": 3,
+      "carId": 1,
+      "date": "2020-02-19",
+      "userId": 3,
+      "mileage": "876543215"
+    },
+    {
+      "recommendations": "What's up",
+      "id": 4,
+      "date": "2020-01-13",
       "carId": 1,
       "userId": 3,
-      "id": 3,
-      "mileage": 32000
+      "mileage": "2222222"
+    },
+    {
+      "recommendations": "The last one before the night is over",
+      "id": 5,
+      "carId": 1,
+      "date": "2020-02-13",
+      "userId": 3,
+      "mileage": "290920"
+    },
+    {
+      "recommendations": "yippie!!!!!!",
+      "id": 6,
+      "carId": 1,
+      "date": "2020-01-17",
+      "userId": 3,
+      "mileage": "99999999"
     }
   ]
 }

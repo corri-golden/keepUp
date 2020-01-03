@@ -10,6 +10,7 @@ import Login from './Auth/Login.js'
 import Reg from './Auth/Reg.js'
 import WeeklySummaryList from './WeeklySummary/WeeklySummaryList.js';
 import WeeklySummaryForm from './WeeklySummary/WeeklySummaryForm.js'
+import WeeklySummaryEdit from './WeeklySummary/WeeklySummaryEdit.js'
 
 
 
@@ -68,6 +69,12 @@ class ApplicationViews extends Component {   //adding /1 extension to pass it to
                     } else {
                         return <Redirect to="/login" />
                     }
+                }} />
+                <Route
+                    path="/weeklySummaries/:weeklySummariesId(\d+)/edit" render={props => {
+                        return <WeeklySummaryEdit {...props} />
+                    }}
+                />
                 }} />
                 <Route
                     path="/tickets/:ticketsId(\d+)/edit" render={props => {
