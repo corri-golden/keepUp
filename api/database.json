@@ -60,19 +60,17 @@
     },
     {
       "message": "Car is smoking.  Bad",
-      "timeStamp": "2019-12-31T21:19:56.039Z",
+      "id": 45,
       "carId": 1,
-      "maintenanceTypeId": 4,
-      "userId": 3,
-      "id": 45
+      "maintenanceTypeId": 2,
+      "userId": 3
     },
     {
       "message": "We got robbed.",
-      "timeStamp": "2020-01-01T23:28:02.870Z",
+      "id": 46,
       "carId": 1,
       "maintenanceTypeId": 1,
-      "userId": 3,
-      "id": 46
+      "userId": 3
     },
     {
       "message": "What's up",

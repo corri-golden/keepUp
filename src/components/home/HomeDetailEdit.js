@@ -62,7 +62,7 @@ class HomeDetailEdit extends Component {    // responsible for filling in state 
         });
       });
     const currentUser = JSON.parse(sessionStorage.getItem("credentials"))
-    carsManager.getAllUserCars(getUser().id)
+    carsManager.getAll(getUser().id)
       .then((cars) => {
         this.setState({
           cars: cars
