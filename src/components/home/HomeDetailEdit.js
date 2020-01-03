@@ -37,7 +37,8 @@ class HomeDetailEdit extends Component {    // responsible for filling in state 
       id: this.props.match.params.ticketsId,
       carId: Number(this.state.carId),
       maintenanceTypeId: Number(this.state.maintenanceTypeId),
-      timeStamp: this.state.timeStamp,
+      date: this.state.date,
+      mileage: this.state.mileage,
       userId: getUser().id
     };
 
@@ -51,6 +52,7 @@ class HomeDetailEdit extends Component {    // responsible for filling in state 
     console.log(this.props)
     ticketManager.get(this.props.match.params.ticketsId)
       .then(ticket => {
+        console.log("ticket", ticket)
         this.setState({
           message: ticket.message,
           loadingStatus: false,
@@ -101,10 +103,10 @@ class HomeDetailEdit extends Component {    // responsible for filling in state 
                 })}
               </Form.Control>
             </Form.Group>
-
+            
 
             <Form.Group>
-              <Form.Control as="textarea" rows="3" className="form-control" onChange={this.handleFieldChange} id="message" value={this.state.message}/>
+              <Form.Control as="textarea" rows="3" className="form-control" onChange={this.handleFieldChange} id="message" value={this.state.message} />
               <label htmlFor="Maintenance"></label>
               <Button variant="warning" disabled={this.state.loadingStatus} onClick={this.updateExistingTicket}
                 size="lg" block className="mt-3">Submit</Button>

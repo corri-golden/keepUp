@@ -11,6 +11,7 @@ class WeeklySummary extends Component {
             <Card width="100%" className="shadow-lg p-3 mb-5 bg-white rounded">
                <Card.Text border="secondary">{this.props.weeklySummary.user.userName}</Card.Text>
                 <Card.Header><h1>{this.props.weeklySummary.date}</h1></Card.Header>
+                <Card.Title><h3>{this.props.weeklySummary.car.carMake} {this.props.weeklySummary.car.carModel}</h3></Card.Title>
                 <Card.Body>
                 <Card.Text border="secondary" bg="primary" rows="3"><h5>Mileage:{this.props.weeklySummary.mileage}</h5></Card.Text>
                 <Card.Text border="secondary" bg="primary" rows="3">{this.props.weeklySummary.recommendations}</Card.Text>
@@ -18,13 +19,13 @@ class WeeklySummary extends Component {
                 <Button variant="danger" onClick={() => this.props.deleteWeeklySummary(this.props.weeklySummary.id)} size="lg">
                             Delete
                             </Button>
-                        <Button border="primary" className="mt-3" variant="warning" onClick={() => { this.props.history.push(`/tickets/${this.props.ticket.id}/edit`) }} size="lg">Edit</Button>
+                <Button border="primary" className="mt-3" variant="warning" onClick={() => { this.props.history.push(`/weeklySummaries/${this.props.weeklySummary.id}/edit`) }} size="lg">Edit</Button>
 
 
             </Card>
         )
     }
 }
-
+ 
 
 export default WeeklySummary
