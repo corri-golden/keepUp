@@ -31,11 +31,12 @@ class ApplicationViews extends Component {   //adding /1 extension to pass it to
                 <Route path="/login" render={props => {
                     return <Login setUser={this.props.setUser}{...props} />
                 }} />
+                
                 <Route
                     exact path="/register" render={props => {
                         return <Reg setUser={this.props.setUser} {...props} />
-                    }}
-                />
+                    }} />
+                
                 <Route exact path="/" render={(props) => {
                     if (this.isAuthenticated()) {
                         return <Home {...props} />
@@ -43,12 +44,15 @@ class ApplicationViews extends Component {   //adding /1 extension to pass it to
                         return <Redirect to="/login" />
                     }
                 }} />
+                
                 <Route path="/keepUp" render={(props) => {
                     return <KeepUp />
                 }} />
+                
                 <Route path="/homeDetail/:maintenanceTypeId(\d+)" render={(props) => {
                     return <HomeDetail {...props} />
                 }} />
+                
                 <Route exact path="/tickets" render={(props) => {
                     if (this.isAuthenticated()) {
                         return <TicketList {...props} />
@@ -56,6 +60,7 @@ class ApplicationViews extends Component {   //adding /1 extension to pass it to
                         return <Redirect to="/login" />
                     }
                 }} />
+                
                 <Route exact path="/weeklySummaries" render={props => {
                     if (this.isAuthenticated()) {
                         return <WeeklySummaryList {...props} />
@@ -63,6 +68,7 @@ class ApplicationViews extends Component {   //adding /1 extension to pass it to
                         return <Redirect to="/" />
                     }
                 }} />
+                
                 <Route exact path="/weeklySummaries/new" render={(props) => {
                     if (this.isAuthenticated()) {
                         return <WeeklySummaryForm {...props} />
@@ -70,17 +76,18 @@ class ApplicationViews extends Component {   //adding /1 extension to pass it to
                         return <Redirect to="/login" />
                     }
                 }} />
+                
                 <Route
                     path="/weeklySummaries/:weeklySummariesId(\d+)/edit" render={props => {
                         return <WeeklySummaryEdit {...props} />
-                    }}
-                />
-                }} />
+                    }} />
+                
                 <Route
                     path="/tickets/:ticketsId(\d+)/edit" render={props => {
                         return <HomeDetailEdit {...props} />
                     }}
                 />
+
             </React.Fragment>
         )
     }

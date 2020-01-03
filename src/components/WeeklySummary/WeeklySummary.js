@@ -8,7 +8,7 @@ import { getUser } from '../modules/Helper.js';
 class WeeklySummary extends Component {
     render() {
         return (
-            <Card className="mt-3" className="shadow-lg p-3 mb-5 bg-white rounded">
+            <Card className="shadow-lg p-3 mb-5 bg-white rounded">
             <Card.Text border="secondary">{this.props.weeklySummary.user.userName}</Card.Text>
             <Card.Header><h2>Weekly Summary</h2></Card.Header>
             <ListGroup variant="flush" />
@@ -17,9 +17,9 @@ class WeeklySummary extends Component {
                 <ListGroup.Item text=""><h4>Mileage: {this.props.weeklySummary.mileage}</h4></ListGroup.Item>
                 <ListGroup.Item rows="8" border=""><h5>{this.props.weeklySummary.recommendations}</h5></ListGroup.Item>
         
-                    <Button variant="danger" onClick={() => this.props.deleteWeeklySummary(this.props.weeklySummary.id)} size="lg">
-                    Delete
-                            </Button>
+                <Button variant="danger" onClick={() => this.props.deleteWeeklySummary(this.props.weeklySummary.id)} size="lg">
+                Delete
+                </Button>
                 <Button border="primary" className="mt-3" variant="warning" onClick={() => { this.props.history.push(`/weeklySummaries/${this.props.weeklySummary.id}/edit`) }} size="lg">Edit</Button>
 
             </Card>

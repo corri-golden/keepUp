@@ -7,6 +7,10 @@ import { FaBeer, TiDelete, MdDelete, FaEdit } from 'react-icons/fa';
 
 class Tickets extends Component {
 
+    convertTimeStamp=(date)=> {
+        return new Date(date)
+    }
+    
     render() {
         // console.log("tickets props", this.props.ticket.car.carMake)
         // <h2><span className="card-message">{this.props.car.carId}</span></h2>
@@ -28,7 +32,7 @@ class Tickets extends Component {
                         </div>
                     </Card.Body>
                     
-                    <Card.Footer className="text-muted">{this.props.ticket.timeStamp}</Card.Footer>
+                    <Card.Footer className="text-muted">{this.convertTimeStamp(this.props.ticket.timeStamp).toDateString()}</Card.Footer>
                 </Card>
 
 

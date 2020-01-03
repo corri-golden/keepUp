@@ -30,6 +30,12 @@
       "id": 2,
       "carMake": "Toyota",
       "carModel": "Camry",
+      "userId": 2
+    },
+    {
+      "id": 3,
+      "carMake": "Honda",
+      "carModel": "Accord",
       "userId": 1
     }
   ],
@@ -38,9 +44,8 @@
       "message": "wait i have tires",
       "id": 35,
       "carId": 2,
-      "maintenanceTypeId": 3,
-      "timeStamp": "2019-12-19T21:31:16.034Z",
-      "userId": 1
+      "maintenanceTypeId": 5,
+      "userId": 2
     },
     {
       "message": "ccc",
@@ -59,28 +64,12 @@
       "id": 38
     },
     {
-      "message": "Car is smoking.  Bad",
-      "timeStamp": "2019-12-31T21:19:56.039Z",
-      "carId": 1,
-      "maintenanceTypeId": 4,
-      "userId": 3,
-      "id": 45
-    },
-    {
-      "message": "We got robbed.",
-      "timeStamp": "2020-01-01T23:28:02.870Z",
-      "carId": 1,
+      "message": "kkkkkkkynnn",
+      "id": 48,
+      "carId": 2,
       "maintenanceTypeId": 1,
-      "userId": 3,
-      "id": 46
-    },
-    {
-      "message": "What's up",
-      "timeStamp": "2020-01-02T14:34:20.808Z",
-      "carId": 1,
-      "maintenanceTypeId": 2,
-      "userId": 3,
-      "id": 47
+      "userId": 1,
+      "timeStamp": "2020-01-03T20:20:57.014Z"
     }
   ],
   "maintenanceTypes": [
@@ -161,6 +150,38 @@
       "date": "2020-01-17",
       "userId": 3,
       "mileage": "99999999"
+    },
+    {
+      "recommendations": "The Toyota will need a washing.  Park under a tree and there's a lot of poop.",
+      "date": "2020-01-10",
+      "carId": 2,
+      "userId": 1,
+      "mileage": "212122",
+      "id": 7
+    },
+    {
+      "recommendations": "Howdy",
+      "date": "2020-01-10",
+      "carId": 1,
+      "userId": 1,
+      "mileage": "2222222",
+      "id": 8
+    },
+    {
+      "recommendations": "how about now",
+      "date": "2020-01-09",
+      "carId": 3,
+      "userId": 1,
+      "mileage": "88888",
+      "id": 9
+    },
+    {
+      "recommendations": "Lets see if this works!!!",
+      "id": 10,
+      "carId": 2,
+      "date": "2020-01-25",
+      "userId": 1,
+      "mileage": "110110"
     }
   ]
 }

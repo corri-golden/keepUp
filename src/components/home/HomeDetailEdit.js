@@ -39,7 +39,8 @@ class HomeDetailEdit extends Component {    // responsible for filling in state 
       maintenanceTypeId: Number(this.state.maintenanceTypeId),
       date: this.state.date,
       mileage: this.state.mileage,
-      userId: getUser().id
+      userId: getUser().id,
+      timeStamp: this.state.timeStamp
     };
 
     ticketManager.update(editedTicket)
@@ -62,7 +63,7 @@ class HomeDetailEdit extends Component {    // responsible for filling in state 
         });
       });
     const currentUser = JSON.parse(sessionStorage.getItem("credentials"))
-    carsManager.getAllUserCars(getUser().id)
+    carsManager.getAll(this.props.match.params.cardId)
       .then((cars) => {
         this.setState({
           cars: cars
@@ -90,7 +91,7 @@ class HomeDetailEdit extends Component {    // responsible for filling in state 
           <fieldset>
             <Form.Group>
               <Form.Label><h2>Maintenance Type</h2></Form.Label>
-              <Form.Control as="select" id="maintenanceTypeId" onChange={this.handleFieldChange}>
+              <Form.Control value={this.state.maintenanceTypeId} as="select" id="maintenanceTypeId" onChange={this.handleFieldChange}>
                 {this.state.maintenanceTypes.map(maintenanceType => {
                   return <option value={maintenanceType.id} key={`select-option-${maintenanceType.name}`}>{maintenanceType.name}</option>
                 })}
@@ -108,6 +109,7 @@ class HomeDetailEdit extends Component {    // responsible for filling in state 
             <Form.Group>
               <Form.Control as="textarea" rows="3" className="form-control" onChange={this.handleFieldChange} id="message" value={this.state.message} />
               <label htmlFor="Maintenance"></label>
+              <Form.Control id="timeStamp" value={this.state.timeStamp} />
               <Button variant="warning" disabled={this.state.loadingStatus} onClick={this.updateExistingTicket}
                 size="lg" block className="mt-3">Submit</Button>
             </Form.Group>
