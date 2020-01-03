@@ -64,21 +64,6 @@
       "carId": 1,
       "maintenanceTypeId": 2,
       "userId": 3
-    },
-    {
-      "message": "We got robbed.",
-      "id": 46,
-      "carId": 1,
-      "maintenanceTypeId": 1,
-      "userId": 3
-    },
-    {
-      "message": "What's up",
-      "timeStamp": "2020-01-02T14:34:20.808Z",
-      "carId": 1,
-      "maintenanceTypeId": 2,
-      "userId": 3,
-      "id": 47
     }
   ],
   "maintenanceTypes": [
