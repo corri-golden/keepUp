@@ -60,7 +60,7 @@ class WeeklySummaryList extends Component {
         console.log(this.deleteWeeklySummary)
         return (
             <>
-            <Button variant="warning" type="button" onClick={() => {this.props.history.push("/weeklySummaries/new")}} >Add Weekly Summary</Button>
+            <Button block className="shadow-lg p-3 mb-5 bg-variant rounded" variant="warning" type="button" onClick={() => {this.props.history.push("/weeklySummaries/new")}} >Add Weekly Summary</Button>
             <div className="container-cards">
                     
                 {this.state.weeklySummaries.map(weeklySummary =>
