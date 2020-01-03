@@ -59,7 +59,7 @@ class WeeklySummaryEdit extends Component {
                 });
             });
         const currentUser = JSON.parse(sessionStorage.getItem("credentials"))
-        carsManager.getAllUserCars(getUser().id)
+        carsManager.getAll(this.props.match.params.cars)
             .then((cars) => {
                 this.setState({
                     cars: cars

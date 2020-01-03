@@ -8,7 +8,7 @@ export default {
     return fetch(`${remoteURL}/cars`).then(result => result.json())
   },
   getAllUserCars(id) {
-    return fetch(`${remoteURL}/cars?userId=${id}?_expand=user&_expand=car`).then(result => result.json())
+    return fetch(`${remoteURL}/cars?userId=${id}&_expand=user`).then(result => result.json())
   },
   
   post(newCar) {
