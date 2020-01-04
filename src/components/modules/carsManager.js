@@ -5,10 +5,25 @@ export default {
     return fetch(`${remoteURL}/cars/${id}?_expand=userId&_expand=car`).then(result => result.json())
   },
   getAll() {
-    return fetch(`${remoteURL}/cars`).then(result => result.json())
+    return fetch(`${remoteURL}/cars?&_expand=user`).then(result => result.json())
   },
   getAllUserCars(id) {
     return fetch(`${remoteURL}/cars?userId=${id}&_expand=user`).then(result => result.json())
+  },
+  delete(id) {
+    return fetch(`${remoteURL}/cars/${id}`, {
+      method: "DELETE"
+    })
+      .then(result => result.json())
+  },
+  update(editedCar) {  // whole ticket
+    return fetch(`${remoteURL}/cars/${editedCar.id}`, {  //targeted
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(editedCar)
+    }).then(data => data.json());
   },
   
   post(newCar) {
