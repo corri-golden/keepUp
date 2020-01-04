@@ -42,7 +42,7 @@ class CarEdit extends Component {
 
     componentDidMount() {
         console.log(this.props)
-        carsManager.getAll(this.props.match.params.carsId)
+        carsManager.get(this.props.match.params.carsId)
             .then(car => {
                 console.log("car", car)
                 this.setState({
@@ -52,16 +52,17 @@ class CarEdit extends Component {
                     // maintenanceTypeId: ticket.maintenanceTypeId,
                     carMake: car.carMake,
                     carModel: car.carModel,
-                    carId: car.carId
+                    carId: car.id
                 });
+                console.log("heyyyyy", this.state)
             });
-        // const currentUser = JSON.parse(sessionStorage.getItem("credentials"))
-        // carsManager.getAll(this.props.match.params.cars)
-        //     .then((cars) => {
-        //         this.setState({
-        //             cars: cars
-        //         })
-        //     })
+        const currentUser = JSON.parse(sessionStorage.getItem("credentials"))
+        carsManager.getAll(this.props.match.params.cars)
+            .then((cars) => {
+                this.setState({
+                    cars: cars
+                })
+            })
     }
 
     render() {
@@ -73,7 +74,7 @@ class CarEdit extends Component {
                         <Form.Group>
                         </Form.Group>
                         <Form.Group>
-                            <Form.Control value={this.state.carId} as="select" id="carId" onChange={this.handleFieldChange}>
+                            <Form.Control value={this.state.carId} as="select" id="CarId" onChange={this.handleFieldChange}>
                                 {this.state.cars.map(car => {
                                     return <option key={`select-option-${car.id}`} value={car.id}>{car.carMake} {car.carModel}</option>
                                 })}
