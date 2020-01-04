@@ -12,6 +12,8 @@ import WeeklySummaryList from './WeeklySummary/WeeklySummaryList.js';
 import WeeklySummaryForm from './WeeklySummary/WeeklySummaryForm.js'
 import WeeklySummaryEdit from './WeeklySummary/WeeklySummaryEdit.js'
 import UserForm from './Users/UserForm.js'
+import UserList from './Users/UserList.js'
+
 
 
 
@@ -93,6 +95,13 @@ class ApplicationViews extends Component {   //adding /1 extension to pass it to
                         return <UserForm {...props} />
                     }}
                 />
+                <Route exact path="/users" render={props => {
+                    if (this.isAuthenticated()) {
+                        return <UserList {...props} />
+                    } else {
+                        return <Redirect to="/" />
+                    }
+                }} />
 
             </React.Fragment>
         )
