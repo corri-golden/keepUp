@@ -16,6 +16,8 @@ import UserList from './Users/UserList.js'
 import UserEdit from './Users/UserEdit.js'
 import Users from './Users/Users.js'
 import CarForm from './Cars/CarForm.js'
+import CarList from './Cars/CarList.js'
+import CarEdit from './Cars/CarEdit.js'
 
 
 
@@ -116,6 +118,17 @@ class ApplicationViews extends Component {   //adding /1 extension to pass it to
                         return <Redirect to="/" />
                     }
                 }} />
+                <Route exact path="/cars" render={props => {
+                    if (this.isAuthenticated()) {
+                        return <CarList {...props} />
+                    } else {
+                        return <Redirect to="/" />
+                    }
+                }} />
+                <Route
+                    path="/cars/:carsId(\d+)/edit" render={props => {
+                        return <CarEdit {...props} />
+                    }} />
             </React.Fragment>
         )
     }

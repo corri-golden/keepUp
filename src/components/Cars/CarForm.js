@@ -31,7 +31,7 @@ class CarForm extends Component {
             this.setState({ loadingStatus: true });
             const car = {
                 userId: this.state.userId,
-                carMake: this.state.carModel,
+                carMake: this.state.carMake,
                 // id: Number(this.state.userId),
                 carModel: this.state.carModel
             };
@@ -69,9 +69,9 @@ class CarForm extends Component {
 
                 </Form.Group>
                 <Form.Group>
-                    <Form.Control onChange={this.handleFieldChange} type="userName"
-                        id="userName"
-                        placeholder= "User Name"
+                    <Form.Control onChange={this.handleFieldChange} type="userId"
+                        id="userId"
+                        placeholder= "User Id"
                         required="" />
                 </Form.Group>
                 <Button className="center" type="submit" variant="warning" disabled={this.state.loadingStatus} onClick={this.constructNewCar} block>Add New Car

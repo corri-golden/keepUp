@@ -63,22 +63,22 @@
   ],
   "cars": [
     {
-      "id": 1,
-      "carMake": "Nissan",
-      "carModel": "Altima",
-      "userId": 3
-    },
-    {
       "id": 2,
       "carMake": "Toyota",
       "carModel": "Camry",
       "userId": 2
     },
     {
-      "id": 3,
-      "carMake": "Honda",
-      "carModel": "Accord",
-      "userId": 1
+      "userId": "6",
+      "carMake": "Jeep",
+      "carModel": "Wrangler",
+      "id": 4
+    },
+    {
+      "userId": "9",
+      "carMake": "Lexus",
+      "carModel": "x150",
+      "id": 5
     }
   ],
   "tickets": [
@@ -154,68 +154,12 @@
   ],
   "weeklySummaries": [
     {
-      "id": 1,
-      "date": "2020-01-13",
-      "mileage": 220000,
-      "userId": 1,
-      "recommendations": "Shampoo the car",
-      "carId": 1
-    },
-    {
-      "recommendations": "The tire leaks so please either plug the tire or buy a new one, because I'm spending too much tire stopping to put air in it.",
-      "id": 3,
-      "carId": 1,
-      "date": "2020-02-19",
-      "userId": 3,
-      "mileage": "876543215"
-    },
-    {
-      "recommendations": "What's up",
-      "id": 4,
-      "date": "2020-01-13",
-      "carId": 1,
-      "userId": 3,
-      "mileage": "2222222"
-    },
-    {
-      "recommendations": "The last one before the night is over",
-      "id": 5,
-      "carId": 1,
-      "date": "2020-02-13",
-      "userId": 3,
-      "mileage": "290920"
-    },
-    {
-      "recommendations": "yippie!!!!!!",
-      "id": 6,
-      "carId": 1,
-      "date": "2020-01-17",
-      "userId": 3,
-      "mileage": "99999999"
-    },
-    {
       "recommendations": "The Toyota will need a washing.  Park under a tree and there's a lot of poop.",
       "date": "2020-01-10",
       "carId": 2,
       "userId": 1,
       "mileage": "212122",
       "id": 7
-    },
-    {
-      "recommendations": "Howdy",
-      "date": "2020-01-10",
-      "carId": 1,
-      "userId": 1,
-      "mileage": "2222222",
-      "id": 8
-    },
-    {
-      "recommendations": "how about now",
-      "date": "2020-01-09",
-      "carId": 3,
-      "userId": 1,
-      "mileage": "88888",
-      "id": 9
     },
     {
       "recommendations": "Lets see if this works!!!",
