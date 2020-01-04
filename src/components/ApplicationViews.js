@@ -11,6 +11,7 @@ import Reg from './Auth/Reg.js'
 import WeeklySummaryList from './WeeklySummary/WeeklySummaryList.js';
 import WeeklySummaryForm from './WeeklySummary/WeeklySummaryForm.js'
 import WeeklySummaryEdit from './WeeklySummary/WeeklySummaryEdit.js'
+import UserForm from './Users/UserForm.js'
 
 
 
@@ -85,6 +86,11 @@ class ApplicationViews extends Component {   //adding /1 extension to pass it to
                 <Route
                     path="/tickets/:ticketsId(\d+)/edit" render={props => {
                         return <HomeDetailEdit {...props} />
+                    }}
+                />
+                <Route
+                    path="/userForm" render={props => {
+                        return <UserForm {...props} />
                     }}
                 />
 
