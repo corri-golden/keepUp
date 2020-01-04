@@ -17,6 +17,17 @@
       "userName": "ChrisWord",
       "password": "1234",
       "id": 3
+    },
+    {
+      "userName": "doriI",
+      "password": "123",
+      "id": 4
+    },
+    {
+      "userName": "riyaP",
+      "isAdmin": false,
+      "password": "123",
+      "id": 5
     }
   ],
   "cars": [
