@@ -26,7 +26,7 @@ class Home extends Component {
                 ?
                 <>
                 <Link to="/UserForm">Add User</Link>
-                <Button>Add Car</Button>
+                <Link to="/CarForm">Add Car</Link>
                 
                 
                 {/* <Link to="/Car" value="Antilock Brake Warning"><img className="imgSize" src={require('./photos/Antilock Brake Warning.jpg')} alt="antiLock" /></Link> */}

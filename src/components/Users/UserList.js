@@ -2,7 +2,8 @@ import React, { Component, Link } from 'react'
 import usersManager from '../modules/usersManager.js'
 import { Button } from 'react-bootstrap'
 import { getUser } from "../modules/Helper"
-import User from './User'
+import Users from './Users.js'
+import carsManager from '../modules/carsManager.js'
 
 
 
@@ -12,6 +13,8 @@ class UserList extends Component {
 
     state = {
         users: [],
+        cars: [],
+        carId: "",
     }
 
     componentDidMount() {
@@ -21,6 +24,8 @@ class UserList extends Component {
             this.setState({users: users})
         }
         )}  
+        
+
 
         deleteUser = id => {                // needs to match what's being passed below with the delete variable
         usersManager.delete(id)
@@ -41,7 +46,7 @@ class UserList extends Component {
                 <div className="container-cards">
                         
                     {this.state.users.map(user =>
-                        <User
+                        <Users
                             key={user.id}
                             user={user}
                             deleteUser={this.deleteUser}  // passing props to the child comp tickets

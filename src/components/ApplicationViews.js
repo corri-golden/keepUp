@@ -13,6 +13,9 @@ import WeeklySummaryForm from './WeeklySummary/WeeklySummaryForm.js'
 import WeeklySummaryEdit from './WeeklySummary/WeeklySummaryEdit.js'
 import UserForm from './Users/UserForm.js'
 import UserList from './Users/UserList.js'
+import UserEdit from './Users/UserEdit.js'
+import Users from './Users/Users.js'
+import CarForm from './Cars/CarForm.js'
 
 
 
@@ -102,7 +105,17 @@ class ApplicationViews extends Component {   //adding /1 extension to pass it to
                         return <Redirect to="/" />
                     }
                 }} />
-
+                <Route
+                    path="/users/:usersId(\d+)/edit" render={props => {
+                        return <UserEdit {...props} />
+                    }} />
+                <Route exact path="/carForm" render={props => {
+                    if (this.isAuthenticated()) {
+                        return <CarForm {...props} />
+                    } else {
+                        return <Redirect to="/" />
+                    }
+                }} />
             </React.Fragment>
         )
     }

@@ -16,6 +16,15 @@ export default {
         })
           .then(result => result.json())
       },
+      update(editedUser) {  // whole ticket
+        return fetch(`${remoteURL}/users/${editedUser.id}`, {  //targeted
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(editedUser)
+        }).then(data => data.json());
+      },
     post(newUser) {
         return fetch(`${remoteURL}/users`, {
       method: "POST",
@@ -26,6 +35,8 @@ export default {
     }).then(data => data.json())
   }
 }
+
+
 
 
   
