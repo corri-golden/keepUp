@@ -13,6 +13,7 @@ class UserForm extends Component {
         password: "",
         id: "",
         isAdmin: false,
+        cars: []
     };
 
     handleFieldChange = evt => {

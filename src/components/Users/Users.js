@@ -5,7 +5,7 @@ import { getUser } from '../modules/Helper.js';
 
 
 
-class User extends Component {
+class Users extends Component {
     render() {
         return (
             <Card className="shadow-lg p-3 mb-5 bg-white rounded">
@@ -18,7 +18,7 @@ class User extends Component {
                 <Button variant="danger" onClick={() => this.props.deleteUser(this.props.user.id)} size="lg">
                 Delete
                 </Button>
-                <Button border="primary" className="mt-3" variant="warning" onClick={() => { this.props.history.push(`/weeklySummaries/${this.props.weeklySummary.id}/edit`) }} size="lg">Edit</Button>
+                <Button border="primary" className="mt-3" variant="warning" onClick={() => { this.props.history.push(`/users/${this.props.user.id}/edit`) }} size="lg">Update</Button>
 
             </Card>
         )
@@ -26,4 +26,4 @@ class User extends Component {
 }
 
 
-export default User
+export default Users

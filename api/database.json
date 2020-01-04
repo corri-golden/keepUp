@@ -1,10 +1,10 @@
 {
   "users": [
     {
-      "id": 1,
-      "userName": "daveCherry",
-      "password": "123",
-      "isAdmin": false
+      "userName": "daveCherrys",
+      "isAdmin": false,
+      "password": "123456",
+      "id": 1
     },
     {
       "isAdmin": true,
@@ -47,6 +47,18 @@
       "isAdmin": false,
       "password": "1234",
       "id": 9
+    },
+    {
+      "userName": "pencil",
+      "isAdmin": false,
+      "password": "123",
+      "id": 10
+    },
+    {
+      "userName": "lakers",
+      "isAdmin": false,
+      "password": "123",
+      "id": 11
     }
   ],
   "cars": [
