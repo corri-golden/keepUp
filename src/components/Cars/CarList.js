@@ -15,6 +15,7 @@ class CarList extends Component {
         carMake: "",
         carModel: "",
         userId: "",
+        id: "",
     }
 
     componentDidMount() {
@@ -42,7 +43,6 @@ class CarList extends Component {
         render() {
             return (
                 <>
-                <h3>Cars</h3>
                 <div className="container-cards">
                         
                     {this.state.cars.map(car =>

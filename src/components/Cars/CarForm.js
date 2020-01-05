@@ -10,7 +10,8 @@ class CarForm extends Component {
 
     state = {
         cars: [],
-        userId: "",
+        users: [],
+        userId: "0",
         carMake: "",
         carModel: "",
     };
@@ -30,10 +31,10 @@ class CarForm extends Component {
         } else {
             this.setState({ loadingStatus: true });
             const car = {
-                userId: this.state.userId,
+                userId: Number(this.state.userId),
                 carMake: this.state.carMake,
                 // id: Number(this.state.userId),
-                carModel: this.state.carModel
+                carModel: this.state.carModel,
             };
             // Create the message and redirect user to ticket 
             carsManager.post(car)
@@ -46,7 +47,7 @@ class CarForm extends Component {
     componentDidMount() {
         usersManager.getAllUsers()
             .then(users => {
-                console.log(users)
+                console.log("user", users)
                 this.setState({ users: users })
             }
             )
@@ -69,11 +70,13 @@ class CarForm extends Component {
 
                 </Form.Group>
                 <Form.Group>
-                    <Form.Control onChange={this.handleFieldChange} type="userId"
-                        id="userId"
-                        placeholder= "User Id"
-                        required="" />
-                </Form.Group>
+                        <Form.Control as="select" id="userId" onChange={this.handleFieldChange}>
+                        <option value="0"> Select A User</option>
+                            {this.state.users.map(user => (
+                                <option key={`select-option-${user.id}`} value={user.id}>{user.userName}</option>
+                            ))}
+                        </Form.Control>
+                    </Form.Group>
                 <Button className="center" type="submit" variant="warning" disabled={this.state.loadingStatus} onClick={this.constructNewCar} block>Add New Car
                 </Button>
             </form>
