@@ -15,7 +15,7 @@ class WeeklySummary extends Component {
                 <ListGroup.Item><h4>Date: {this.props.weeklySummary.date}</h4></ListGroup.Item>
                 <ListGroup.Item><h4>Car: {this.props.weeklySummary.car.carMake} {this.props.weeklySummary.car.carModel}</h4></ListGroup.Item>
                 <ListGroup.Item text=""><h4>Mileage: {this.props.weeklySummary.mileage}</h4></ListGroup.Item>
-                <ListGroup.Item rows="8" border=""><h5>{this.props.weeklySummary.recommendations}</h5></ListGroup.Item>
+                <ListGroup.Item type="text" rows="8" border="">{this.props.weeklySummary.recommendations}</ListGroup.Item>
         
                 <Button variant="danger" onClick={() => this.props.deleteWeeklySummary(this.props.weeklySummary.id)} size="lg">
                 Delete

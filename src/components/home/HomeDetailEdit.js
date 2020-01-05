@@ -109,7 +109,7 @@ class HomeDetailEdit extends Component {    // responsible for filling in state 
             <Form.Group>
               <Form.Control as="textarea" rows="3" className="form-control" onChange={this.handleFieldChange} id="message" value={this.state.message} />
               <label htmlFor="Maintenance"></label>
-              <Form.Control id="timeStamp" value={this.state.timeStamp} />
+              {/* <Form.Control id="timeStamp" value={this.state.timeStamp} /> */}
               <Button variant="warning" disabled={this.state.loadingStatus} onClick={this.updateExistingTicket}
                 size="lg" block className="mt-3">Submit</Button>
             </Form.Group>

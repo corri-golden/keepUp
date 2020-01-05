@@ -25,10 +25,10 @@ class Tickets extends Component {
                         
                         <Card.Text border="secondary" bg="primary" rows="3">{this.props.ticket.message}</Card.Text>
 
-                        <Button variant="danger" onClick={() => this.props.deleteTicket(this.props.ticket.id)} size="lg">
+                        <Button variant="danger" className="shadow-lg" onClick={() => this.props.deleteTicket(this.props.ticket.id)} size="lg">
                             Delete
                             </Button>
-                        <Button border="primary" className="mt-3" variant="warning" onClick={() => { this.props.history.push(`/tickets/${this.props.ticket.id}/edit`) }} size="lg">Edit</Button>
+                        <Button border="primary" className="shadow-lg mt-3" variant="warning" onClick={() => { this.props.history.push(`/tickets/${this.props.ticket.id}/edit`) }} size="lg">Edit</Button>
                         </div>
                     </Card.Body>
                     

@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "userName": "daveCherrys",
+      "userName": "daveCherry",
       "isAdmin": false,
       "password": "123456",
       "id": 1
@@ -13,52 +13,10 @@
       "id": 2
     },
     {
+      "userName": "larryHall",
       "isAdmin": false,
-      "userName": "ChrisWord",
-      "password": "1234",
+      "password": "123",
       "id": 3
-    },
-    {
-      "userName": "riyaP",
-      "isAdmin": false,
-      "password": "123",
-      "id": 5
-    },
-    {
-      "userName": "jam",
-      "isAdmin": false,
-      "password": "123",
-      "id": 6
-    },
-    {
-      "userName": "kkekk",
-      "isAdmin": false,
-      "password": "123",
-      "id": 7
-    },
-    {
-      "userName": "ddd",
-      "isAdmin": false,
-      "password": "123",
-      "id": 8
-    },
-    {
-      "userName": "dormi",
-      "isAdmin": false,
-      "password": "1234",
-      "id": 9
-    },
-    {
-      "userName": "pencil",
-      "isAdmin": false,
-      "password": "123",
-      "id": 10
-    },
-    {
-      "userName": "lakers",
-      "isAdmin": false,
-      "password": "123",
-      "id": 11
     }
   ],
   "cars": [
@@ -66,52 +24,45 @@
       "id": 2,
       "carMake": "Toyota",
       "carModel": "Camry",
-      "userId": 2
+      "userId": 1
     },
     {
-      "userId": "6",
-      "carMake": "Jeep",
-      "carModel": "Wrangler",
-      "id": 4
+      "userId": 2,
+      "carMake": "Honda",
+      "carModel": "Accord",
+      "id": 1
     },
     {
-      "userId": "9",
-      "carMake": "Lexus",
-      "carModel": "x150",
-      "id": 5
+      "userId": 3,
+      "carMake": "Toyota ",
+      "carModel": "Sienna",
+      "id": 3
     }
   ],
   "tickets": [
     {
-      "message": "wait i have tires",
-      "id": 35,
+      "message": "The car smokes when I drove on the interstate, but when I drive under 50 mph it doesn't smoke.",
+      "timeStamp": "2020-01-05T14:34:12.661Z",
       "carId": 2,
-      "maintenanceTypeId": 5,
-      "userId": 2
-    },
-    {
-      "message": "ccc",
-      "timeStamp": "2019-12-19T22:19:21.921Z",
-      "carId": 2,
-      "maintenanceTypeId": 1,
-      "userId": 2,
-      "id": 37
-    },
-    {
-      "message": "heyyyy",
-      "timeStamp": "2019-12-19T22:25:24.951Z",
-      "carId": 2,
-      "maintenanceTypeId": 1,
-      "userId": 2,
-      "id": 38
-    },
-    {
-      "message": "kkkkkkkynnn",
-      "id": 48,
-      "carId": 2,
-      "maintenanceTypeId": 1,
+      "maintenanceTypeId": 4,
       "userId": 1,
-      "timeStamp": "2020-01-03T20:20:57.014Z"
+      "id": 1
+    },
+    {
+      "message": "I put air in the tire this morning but 2 hours later the tire pressure warning light came on and I had to put air back in it.",
+      "timeStamp": "2020-01-05T14:36:20.508Z",
+      "carId": 2,
+      "maintenanceTypeId": 6,
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "message": "TIre blow out",
+      "timeStamp": "2020-01-05T16:20:11.544Z",
+      "carId": 3,
+      "maintenanceTypeId": 1,
+      "userId": 3,
+      "id": 3
     }
   ],
   "maintenanceTypes": [
@@ -162,12 +113,12 @@
       "id": 7
     },
     {
-      "recommendations": "Lets see if this works!!!",
-      "id": 10,
+      "recommendations": "I had a client whose baby threw up in the car.  I clean it up, but you can still smell it.  Might need to have the car shampooed.",
+      "date": "2020-01-03",
       "carId": 2,
-      "date": "2020-01-25",
       "userId": 1,
-      "mileage": "110110"
+      "mileage": "204122",
+      "id": 8
     }
   ]
 }
