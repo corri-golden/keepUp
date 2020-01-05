@@ -21,10 +21,10 @@
   ],
   "cars": [
     {
-      "id": 2,
+      "userId": 1,
       "carMake": "Toyota",
       "carModel": "Camry",
-      "userId": 1
+      "id": 2
     },
     {
       "userId": 2,
@@ -57,12 +57,12 @@
       "id": 2
     },
     {
-      "message": "TIre blow out",
-      "timeStamp": "2020-01-05T16:20:11.544Z",
+      "message": "The car doesn't start sometimes in the morning.  I believe because of the cold weather.  May need a new battery",
+      "timeStamp": "2020-01-05T17:57:52.200Z",
       "carId": 3,
-      "maintenanceTypeId": 1,
+      "maintenanceTypeId": 3,
       "userId": 3,
-      "id": 3
+      "id": 4
     }
   ],
   "maintenanceTypes": [
@@ -119,6 +119,22 @@
       "userId": 1,
       "mileage": "204122",
       "id": 8
+    },
+    {
+      "recommendations": "200 miles until the next tire rotation.",
+      "date": "2020-01-10",
+      "carId": 3,
+      "userId": 3,
+      "mileage": "306255",
+      "id": 9
+    },
+    {
+      "recommendations": "wewewe",
+      "date": "2020-01-04",
+      "carId": 3,
+      "userId": 3,
+      "mileage": "2222222",
+      "id": 10
     }
   ]
 }

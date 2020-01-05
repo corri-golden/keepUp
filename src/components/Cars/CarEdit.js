@@ -16,6 +16,7 @@ class CarEdit extends Component {
         carMake: "",
         carModel: "",
         userId: "",
+        users: [],
         carId: "",
     }
 
@@ -33,7 +34,7 @@ class CarEdit extends Component {
             carMake: this.state.carMake,
             carModel: this.state.carModel,
             // userId: getUser().id,
-            carId: Number(this.state.carId)
+            id: this.state.id
         };
 
         carsManager.update(editedCar)
@@ -52,7 +53,7 @@ class CarEdit extends Component {
                     // maintenanceTypeId: ticket.maintenanceTypeId,
                     carMake: car.carMake,
                     carModel: car.carModel,
-                    carId: car.id
+                    id: car.id
                 });
                 console.log("heyyyyy", this.state)
             });
@@ -62,8 +63,14 @@ class CarEdit extends Component {
                 this.setState({
                     cars: cars
                 })
-            })
+            }); usersManager.getAllUsers()
+            .then(users => {
+                console.log("user", users)
+                this.setState({ users: users })
+            }
+            )
     }
+            
 
     render() {
         console.log(this.state)
@@ -73,20 +80,22 @@ class CarEdit extends Component {
                     <fieldset>
                         <Form.Group>
                         </Form.Group>
+                        
                         <Form.Group>
-                            <Form.Control value={this.state.carId} as="select" id="CarId" onChange={this.handleFieldChange}>
-                                {this.state.cars.map(car => {
-                                    return <option key={`select-option-${car.id}`} value={car.id}>{car.carMake} {car.carModel}</option>
+                            <Form.Control type="text" id="carMake" onChange={this.handleFieldChange} value={this.state.carMake} />
+                        </Form.Group>
+                        <Form.Group>
+                            <Form.Control type="text" id="carModel" onChange={this.handleFieldChange} value={this.state.carModel} />
+                        </Form.Group>
+                       
+                        
+                        <Form.Group>
+                            <Form.Control value={this.state.userId} as="select" id="userId" onChange={this.handleFieldChange}>
+                                {this.state.users.map(user => {
+                                    return <option key={`select-option-${user.id}`} value={user.id}>{user.userName}</option>
                                 })}
                             </Form.Control>
                         </Form.Group>
-                        <Form.Group>
-                            <Form.Control type="text" id="userId" placeholder="User Id" onChange={this.handleFieldChange} value={this.state.userId} />
-                        </Form.Group>
-                        {/* <Form.Group>
-                            <Form.Control type="text" id="password" onChange={this.handleFieldChange} value={this.state.password} />
-                        </Form.Group> */}
-
                         <Form.Group>
                             <Button variant="warning" disabled={this.state.loadingStatus} onClick={this.updateExistingCar}
                                 size="lg" block className="mt-3">Update</Button>

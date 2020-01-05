@@ -28,12 +28,6 @@ class Home extends Component {
                 <header><h1>KeepUp</h1></header>
                 <Button href="UserForm" to width="90%" variant="warning" className="shadow-lg mt-4 mb-5 rounded"  size="lg" block>Add User</Button>
                 <Button href="/CarForm" variant="warning" className="shadow-lg p-2 mb-5 rounded" size="lg" block>Add Car</Button>
-                
-                
-                {/* <Link to="/Car" value="Antilock Brake Warning"><img className="imgSize" src={require('./photos/Antilock Brake Warning.jpg')} alt="antiLock" /></Link> */}
-                
-                
-                
                 </>
                 :
                 <>
