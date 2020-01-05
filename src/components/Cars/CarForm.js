@@ -38,7 +38,7 @@ class CarForm extends Component {
             // Create the message and redirect user to ticket 
             carsManager.post(car)
                 .then(() => this.props.history.push("/cars"))
-            console.log("yop", car)
+            console.log("yo", car)
         }   
     };
 
