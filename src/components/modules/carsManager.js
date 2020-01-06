@@ -17,8 +17,8 @@ export default {
       .then(result => result.json())
   },
   update(editedCar) {  // whole ticket
-    return fetch(`${remoteURL}/cars/${editedCar.id}`, {  //targeted
-      method: "PUT",
+    return fetch(`${remoteURL}/cars/${editedCar.id}`, {  //targeted patch any fields that i update leave the rest alone
+      method: "PATCH",
       headers: {
         "Content-Type": "application/json"
       },

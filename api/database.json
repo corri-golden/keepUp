@@ -21,22 +21,22 @@
   ],
   "cars": [
     {
-      "userId": 1,
-      "carMake": "Toyota",
-      "carModel": "Camry",
-      "id": 2
-    },
-    {
       "userId": 2,
       "carMake": "Honda",
       "carModel": "Accord",
       "id": 1
     },
     {
-      "userId": 3,
+      "userId": 2,
       "carMake": "Toyota ",
       "carModel": "Sienna",
       "id": 3
+    },
+    {
+      "userId": 3,
+      "carMake": "Chevy",
+      "carModel": "Cobalt",
+      "id": 4
     }
   ],
   "tickets": [
@@ -58,19 +58,11 @@
     },
     {
       "message": "The car doesn't start sometimes in the morning.  I believe because of the cold weather.  May need a new battery",
-      "timeStamp": "2020-01-05T17:57:52.200Z",
-      "carId": 3,
+      "id": 4,
+      "carId": 1,
       "maintenanceTypeId": 3,
       "userId": 3,
-      "id": 4
-    },
-    {
-      "message": "jhgbjk",
-      "timeStamp": "2020-01-05T22:39:50.493Z",
-      "carId": 3,
-      "maintenanceTypeId": 1,
-      "userId": 3,
-      "id": 5
+      "timeStamp": "2020-01-05T17:57:52.200Z"
     }
   ],
   "maintenanceTypes": [
@@ -135,14 +127,6 @@
       "userId": 3,
       "mileage": "306255",
       "id": 9
-    },
-    {
-      "recommendations": "wewewe",
-      "date": "2020-01-04",
-      "carId": 3,
-      "userId": 3,
-      "mileage": "2222222",
-      "id": 10
     }
   ]
 }
