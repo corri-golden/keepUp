@@ -9,7 +9,7 @@ import { getUser } from "../modules/Helper"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
+import './NavBar.css'
 
 class Navbar extends Component {  //withrouter allows to have access to history and props.
 
@@ -18,16 +18,16 @@ class Navbar extends Component {  //withrouter allows to have access to history 
     }
 
     componentDidMount() {
-        ticketManager.getAllUserTickets(getUser().id)
+        if (getUser().isAdmin === true) {
+            ticketManager.getAll(getUser().id)
             .then(ticketsArray => {
                 console.log("yo yo", ticketsArray)
                 this.setState({
                     badgeNotif: ticketsArray.length
                 })
             })
-
-
-    }
+        }
+     }
 
 
 
@@ -40,9 +40,10 @@ class Navbar extends Component {  //withrouter allows to have access to history 
     render() {
         return (
             <NavBar bg="light" expand="lg">
-                <Badge badgeContent={this.state.badgeNotif} >
+                <Badge className="icon" color="secondary" badgeContent={this.state.badgeNotif} >
 
                     <NavBar.Brand href="/" to="/home">KeepUp</NavBar.Brand>
+
                 </Badge>
 
                 <NavBar.Toggle aria-controls="basic-navbar-nav" />
@@ -50,8 +51,16 @@ class Navbar extends Component {  //withrouter allows to have access to history 
                     <Nav className="mr-auto">
                         <Nav.Link href="/tickets" to="/tickets">Tickets</Nav.Link>
                         <Nav.Link href="/weeklySummaries" to="/weeklySummaries">Weekly Summary</Nav.Link>
+                        {(getUser().isAdmin === true) 
+                        ?
+                        <>
                         <Nav.Link href="/users" to="/users">Users</Nav.Link>
                         <Nav.Link href="/cars" to="/cars">Cars</Nav.Link>
+                        </>
+                        :
+                        <></>
+                        }
+                        
                         {(this.props.isAuthenticated())
                             ?
                             <Link onClick={this.handleLogout} className="nav-link" to="/login">Logout</Link>

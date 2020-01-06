@@ -26,17 +26,17 @@ class Home extends Component {
                 ?
                 <>
                 <header><h1>KeepUp</h1></header>
-                <Button href="UserForm" to width="90%" variant="warning" className="shadow-lg mt-4 mb-5 rounded"  size="lg" block>Add User</Button>
+                <Button href="UserForm" width="90%" variant="warning" className="shadow-lg mt-4 mb-5 rounded"  size="lg" block>Add User</Button>
                 <Button href="/CarForm" variant="warning" className="shadow-lg p-2 mb-5 rounded" size="lg" block>Add Car</Button>
                 </>
                 :
                 <>
                     <div className="imgContainer">
-                        <Link to="/HomeDetail/1" value="Airbag Indicator"><img className="imgSize" src={require('./photos/Airbag Indicator.jpg')} alt="airbag" /></Link>
+                        <Link to="/HomeDetail/1" value="Airbag Indicator"><img className="imgSize" src={require('./photos/Airbag Indicator1.jpg')} alt="airbag" /></Link>
                         <Link to="/HomeDetail/2" value="Antilock Brake Warning"><img className="imgSize" src={require('./photos/Antilock Brake Warning.jpg')} alt="antiLock" /></Link>
                         <Link to="/HomeDetail/3" value="Battery Alert"><img className="imgSize" src={require('./photos/BatteryAlert2.jpg')} alt="battery" /></Link>
                         <Link to="/HomeDetail/4" value="Engine Temperature"><img className="imgSize" src={require('./photos/Engine Tempature.jpg')} alt="battery" /></Link>
-                        <Link to="/HomeDetail/5" value="Oil Pressure"><img className="imgSize" src={require('./photos/Oil Pressure.jpg')} alt="oil" /></Link>
+                        <Link to="/HomeDetail/5" value="Oil Pressure"><img className="imgSize" src={require('./photos/icon 4.jpg')} alt="oil" /></Link>
                         <Link to="/HomeDetail/6" value="Tire Pressure"><img className="imgSize" src={require('./photos/Tire Pressure Warning.jpg')} alt="tire" /></Link>
                         <Link to="/HomeDetail/7" value="Traction Control"><img className="imgSize" src={require('./photos/Traction Control.jpg')} alt="tire" /></Link>
                         <Link to="/HomeDetail/8" value="Washer Fluid Indicator"><img className="imgSize" src={require('./photos/Washer Fluid Indicator.jpg')} alt="tire" /></Link>

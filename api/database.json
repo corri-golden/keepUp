@@ -63,6 +63,14 @@
       "maintenanceTypeId": 3,
       "userId": 3,
       "id": 4
+    },
+    {
+      "message": "jhgbjk",
+      "timeStamp": "2020-01-05T22:39:50.493Z",
+      "carId": 3,
+      "maintenanceTypeId": 1,
+      "userId": 3,
+      "id": 5
     }
   ],
   "maintenanceTypes": [
