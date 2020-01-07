@@ -1,9 +1,9 @@
 {
   "users": [
     {
-      "userName": "daveCherry",
+      "userName": "joeWalker",
       "isAdmin": false,
-      "password": "123456",
+      "password": "123",
       "id": 1
     },
     {
@@ -13,10 +13,28 @@
       "id": 2
     },
     {
-      "userName": "larryHall",
+      "userName": "laurenRiddle",
       "isAdmin": false,
       "password": "123",
       "id": 3
+    },
+    {
+      "userName": "chaseFite",
+      "isAdmin": false,
+      "password": "123",
+      "id": 4
+    },
+    {
+      "userName": "christianPippin",
+      "isAdmin": false,
+      "password": "123",
+      "id": 5
+    },
+    {
+      "userName": "mattBlagg",
+      "isAdmin": false,
+      "password": "123",
+      "id": 6
     }
   ],
   "cars": [
@@ -27,35 +45,37 @@
       "id": 1
     },
     {
-      "userId": 2,
+      "userId": 5,
       "carMake": "Toyota ",
       "carModel": "Sienna",
       "id": 3
     },
     {
-      "userId": 3,
-      "carMake": "Chevy",
-      "carModel": "Cobalt",
-      "id": 4
+      "userId": 1,
+      "carMake": "Honda",
+      "carModel": "Odysey Exl",
+      "id": 5
+    },
+    {
+      "userId": 4,
+      "carMake": "Dodge ",
+      "carModel": "Caravan",
+      "id": 6
+    },
+    {
+      "userId": 5,
+      "carMake": "Toyota",
+      "carModel": "Camry",
+      "id": 7
+    },
+    {
+      "userId": 6,
+      "carMake": "Ford",
+      "carModel": "E-150",
+      "id": 8
     }
   ],
   "tickets": [
-    {
-      "message": "The car smokes when I drove on the interstate, but when I drive under 50 mph it doesn't smoke.",
-      "timeStamp": "2020-01-05T14:34:12.661Z",
-      "carId": 2,
-      "maintenanceTypeId": 4,
-      "userId": 1,
-      "id": 1
-    },
-    {
-      "message": "I put air in the tire this morning but 2 hours later the tire pressure warning light came on and I had to put air back in it.",
-      "timeStamp": "2020-01-05T14:36:20.508Z",
-      "carId": 2,
-      "maintenanceTypeId": 6,
-      "userId": 1,
-      "id": 2
-    },
     {
       "message": "The car doesn't start sometimes in the morning.  I believe because of the cold weather.  May need a new battery",
       "id": 4,
@@ -63,7 +83,24 @@
       "maintenanceTypeId": 3,
       "userId": 3,
       "timeStamp": "2020-01-05T17:57:52.200Z"
-    }
+    },
+    {
+      "message": "There's a leak.  I've put air in the car twice today.  Need a new tire and no more plugs.",
+      "timeStamp": "2020-01-07T02:13:26.040Z",
+      "carId": 5,
+      "maintenanceTypeId": 6,
+      "userId": 1,
+      "id": 6
+    },
+    {
+      "message": "Smoke is coming from under the hood.  It stops after i turn the engine for 30 minutes",
+      "timeStamp": "2020-01-07T02:39:20.032Z",
+      "carId": 6,
+      "maintenanceTypeId": 4,
+      "userId": 4,
+      "id": 8
+    },
+    
   ],
   "maintenanceTypes": [
     {
@@ -107,7 +144,7 @@
     {
       "recommendations": "The Toyota will need a washing.  Park under a tree and there's a lot of poop.",
       "date": "2020-01-10",
-      "carId": 2,
+      "carId": 1,
       "userId": 1,
       "mileage": "212122",
       "id": 7
@@ -115,7 +152,7 @@
     {
       "recommendations": "I had a client whose baby threw up in the car.  I clean it up, but you can still smell it.  Might need to have the car shampooed.",
       "date": "2020-01-03",
-      "carId": 2,
+      "carId": 3,
       "userId": 1,
       "mileage": "204122",
       "id": 8
@@ -123,10 +160,26 @@
     {
       "recommendations": "200 miles until the next tire rotation.",
       "date": "2020-01-10",
-      "carId": 3,
+      "carId": 4,
       "userId": 3,
       "mileage": "306255",
       "id": 9
+    },
+    {
+      "recommendations": "A client vomited.  Need to shampoo the car.",
+      "date": "2020-01-03",
+      "carId": 6,
+      "userId": 4,
+      "mileage": "305100",
+      "id": 10
+    },
+    {
+      "recommendations": "Dfjdkfjsf",
+      "date": "2020-01-03",
+      "carId": 7,
+      "userId": 5,
+      "mileage": "111000",
+      "id": 11
     }
   ]
 }
