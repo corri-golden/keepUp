@@ -1,68 +1,75 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+KeepUp: Maintenance Dashboard
+Setup: Follow these steps exactly
+Clone this repository
+cd into the directory it creates
+In the api directory, create a copy of the database.json.example and remove the .example extension.
+Run npm install and wait for all dependencies to be installed
+Run npm start to verify that installation was successful.
+What is KeepUp?
+KeepUP is an app that allows transportation owners to keep up with the maintenance issues of the cars their drivers are allowed to take home so routine maintenance issues don't become expensive emergency issues. 
+You will be using the React library to build out this application.
 
-## Available Scripts
+To start you off, here's an example of what the resources in your API should look like once it's populated with some data from your application.
 
-In the project directory, you can run:
+Users
+{ "id": 1, "username": "Steve", "email": "me@me.com" }
+Tickets
+{ "id": 1, carId: 1, "comment": "What's up?" }
+Cars
+{
+    "id": 1,
+    "userId": 2,
+    "carMake": Toyota 
+    "CarModel": Camry
+}
+WeeklySummaries
+{ "id": 1, "userId": 1, "loggedInUserId": 3 }
+Tasks
+{ "id": 1, "userId": 3, "task": "Take out garbage" }
+Professional Requirements
+All teammates must use React and JSON-server.
+Each module should have a comment at the top with the following info: author(s) and purpose of module
+The README for your project should include instructions on how another person can download and run the application
+An ERD showing the database relationships. A screenshot/image should be included on your README.
+How to Handle Authentication
+You will be using local storage to keep track of which user has logged into Nutshell. When the user fills out the registration form, you will POST their username and password to the users collection in your API. You will then immediately take the id of the object in the response and save it to local storage.
 
-### `npm start`
+localStorage.setItem("activeUser", user.id)
+If you add a Logout feature, all you will need to do is remove the session storage item.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+localStorage.removeItem("activeUser")
+Keep in mind some tips for a good usable app
+Use acceptable conventions
+Logo positioned at top left
+Navigation across the top or down the left side
+Visual hierarchy
+Most important information is the most prominent
+Break pages up into defined sections
+Logically related content should be related visually
+That which is clickable should be obviously clickable.
+Eliminate distractions
+Use only two typefaces
+Limit color pallet (3 colors with black and white)
+Use a grid
+Support scanning (users don't read)
+Use plenty of headings
+Short paragraphs
+Bulleted lists
+Strive for consistency.
+Bountiful-Blizzards Nutshell-React Application
+Setup: Follow these steps exactly
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Clone this repository
+cd into the directory it creates
+In the api directory, create a copy of the database.json.example and remove the .example extension.
+Run npm install and wait for all dependencies to be installed
+Run npm start to verify that installation was successful.
+Built with:
+React
+Javascript
+CSS
+Github
+Git Bash
+Functions
+Modulation
+JSON

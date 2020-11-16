@@ -9,7 +9,7 @@
     {
       "isAdmin": true,
       "userName": "Admin",
-      "password": "1234",
+      "password": "123",
       "id": 2
     },
     {
@@ -35,72 +35,48 @@
       "isAdmin": false,
       "password": "123",
       "id": 6
+    },
+    {
+      "userName": "erinPolly",
+      "password": "123",
+      "id": 7
     }
   ],
   "cars": [
     {
-      "userId": 2,
-      "carMake": "Honda",
-      "carModel": "Accord",
-      "id": 1
-    },
-    {
-      "userId": 5,
-      "carMake": "Toyota ",
-      "carModel": "Sienna",
-      "id": 3
-    },
-    {
-      "userId": 1,
-      "carMake": "Honda",
-      "carModel": "Odysey Exl",
-      "id": 5
-    },
-    {
-      "userId": 4,
-      "carMake": "Dodge ",
-      "carModel": "Caravan",
-      "id": 6
-    },
-    {
-      "userId": 5,
+      "userId": 6,
       "carMake": "Toyota",
       "carModel": "Camry",
       "id": 7
     },
     {
-      "userId": 6,
-      "carMake": "Ford",
-      "carModel": "E-150",
+      "userId": 5,
+      "carMake": "Chevy",
+      "carModel": "Cobalt",
       "id": 8
+    },
+    {
+      "userId": 3,
+      "carMake": "Chevy",
+      "carModel": "Cobalt",
+      "id": 9
+    },
+    {
+      "userId": 4,
+      "carMake": "Toyota",
+      "carModel": "Prius",
+      "id": 10
     }
   ],
   "tickets": [
     {
-      "message": "The car doesn't start sometimes in the morning.  I believe because of the cold weather.  May need a new battery",
-      "id": 4,
-      "carId": 1,
-      "maintenanceTypeId": 3,
-      "userId": 3,
-      "timeStamp": "2020-01-05T17:57:52.200Z"
-    },
-    {
-      "message": "There's a leak.  I've put air in the car twice today.  Need a new tire and no more plugs.",
-      "timeStamp": "2020-01-07T02:13:26.040Z",
-      "carId": 5,
-      "maintenanceTypeId": 6,
-      "userId": 1,
-      "id": 6
-    },
-    {
-      "message": "Smoke is coming from under the hood.  It stops after i turn the engine for 30 minutes",
-      "timeStamp": "2020-01-07T02:39:20.032Z",
-      "carId": 6,
-      "maintenanceTypeId": 4,
-      "userId": 4,
-      "id": 8
-    },
-    
+      "message": "Car slides in the rain.",
+      "id": 9,
+      "carId": 8,
+      "maintenanceTypeId": 7,
+      "userId": 2,
+      "timeStamp": "2020-01-31T14:59:31.049Z"
+    }
   ],
   "maintenanceTypes": [
     {
@@ -141,38 +117,6 @@
     }
   ],
   "weeklySummaries": [
-    {
-      "recommendations": "The Toyota will need a washing.  Park under a tree and there's a lot of poop.",
-      "date": "2020-01-10",
-      "carId": 1,
-      "userId": 1,
-      "mileage": "212122",
-      "id": 7
-    },
-    {
-      "recommendations": "I had a client whose baby threw up in the car.  I clean it up, but you can still smell it.  Might need to have the car shampooed.",
-      "date": "2020-01-03",
-      "carId": 3,
-      "userId": 1,
-      "mileage": "204122",
-      "id": 8
-    },
-    {
-      "recommendations": "200 miles until the next tire rotation.",
-      "date": "2020-01-10",
-      "carId": 4,
-      "userId": 3,
-      "mileage": "306255",
-      "id": 9
-    },
-    {
-      "recommendations": "A client vomited.  Need to shampoo the car.",
-      "date": "2020-01-03",
-      "carId": 6,
-      "userId": 4,
-      "mileage": "305100",
-      "id": 10
-    },
     {
       "recommendations": "Dfjdkfjsf",
       "date": "2020-01-03",
