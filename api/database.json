@@ -40,6 +40,11 @@
       "userName": "erinPolly",
       "password": "123",
       "id": 7
+    },
+    {
+      "userName": "meme",
+      "password": "123",
+      "id": 8
     }
   ],
   "cars": [
@@ -124,6 +129,14 @@
       "userId": 5,
       "mileage": "111000",
       "id": 11
+    },
+    {
+      "recommendations": "I recommend an oil change soon.",
+      "date": "2020-11-26",
+      "carId": 10,
+      "userId": 4,
+      "mileage": "207122",
+      "id": 12
     }
   ]
 }
