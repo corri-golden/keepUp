@@ -75,7 +75,7 @@
   ],
   "tickets": [
     {
-      "message": "Car slides in the rain alot.",
+      "message": "Car slides in the rain a lot.",
       "id": 9,
       "carId": 8,
       "maintenanceTypeId": 7,
