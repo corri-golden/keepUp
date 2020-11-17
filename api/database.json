@@ -1,76 +1,86 @@
 {
   "users": [
     {
-      "userName": "daveCherry",
+      "userName": "joeWalker",
       "isAdmin": false,
-      "password": "123456",
+      "password": "123",
       "id": 1
     },
     {
       "isAdmin": true,
       "userName": "Admin",
-      "password": "1234",
+      "password": "123",
       "id": 2
     },
     {
-      "userName": "larryHall",
+      "userName": "laurenRiddle",
       "isAdmin": false,
       "password": "123",
       "id": 3
+    },
+    {
+      "userName": "chaseFite",
+      "isAdmin": false,
+      "password": "123",
+      "id": 4
+    },
+    {
+      "userName": "christianPippin",
+      "isAdmin": false,
+      "password": "123",
+      "id": 5
+    },
+    {
+      "userName": "mattBlagg",
+      "isAdmin": false,
+      "password": "123",
+      "id": 6
+    },
+    {
+      "userName": "erinPolly",
+      "password": "123",
+      "id": 7
+    },
+    {
+      "userName": "meme",
+      "password": "123",
+      "id": 8
     }
   ],
   "cars": [
     {
-      "userId": 1,
+      "userId": 6,
       "carMake": "Toyota",
       "carModel": "Camry",
-      "id": 2
+      "id": 7
     },
     {
-      "userId": 2,
-      "carMake": "Honda",
-      "carModel": "Accord",
-      "id": 1
+      "userId": 5,
+      "carMake": "Chevy",
+      "carModel": "Cobalt",
+      "id": 8
     },
     {
       "userId": 3,
-      "carMake": "Toyota ",
-      "carModel": "Sienna",
-      "id": 3
+      "carMake": "Chevy",
+      "carModel": "Cobalt",
+      "id": 9
+    },
+    {
+      "userId": 4,
+      "carMake": "Toyota",
+      "carModel": "Prius",
+      "id": 10
     }
   ],
   "tickets": [
     {
-      "message": "The car smokes when I drove on the interstate, but when I drive under 50 mph it doesn't smoke.",
-      "timeStamp": "2020-01-05T14:34:12.661Z",
-      "carId": 2,
-      "maintenanceTypeId": 4,
-      "userId": 1,
-      "id": 1
-    },
-    {
-      "message": "I put air in the tire this morning but 2 hours later the tire pressure warning light came on and I had to put air back in it.",
-      "timeStamp": "2020-01-05T14:36:20.508Z",
-      "carId": 2,
-      "maintenanceTypeId": 6,
-      "userId": 1,
-      "id": 2
-    },
-    {
-      "message": "The car doesn't start sometimes in the morning.  I believe because of the cold weather.  May need a new battery",
-      "timeStamp": "2020-01-05T17:57:52.200Z",
-      "carId": 3,
-      "maintenanceTypeId": 3,
-      "userId": 3,
-      "id": 4
-    },
-    {
-      "message": "jhgbjk",
-      "timeStamp": "2020-01-05T22:39:50.493Z",
-      "carId": 3,
-      "maintenanceTypeId": 1,
-      "userId": 3,
-      "id": 5
+      "message": "The car slides in the rain a lot.",
+      "id": 9,
+      "carId": 8,
+      "maintenanceTypeId": 7,
+      "userId": 2,
+      "timeStamp": "2020-01-31T14:59:31.049Z"
     }
   ],
   "maintenanceTypes": [
@@ -113,36 +123,20 @@
   ],
   "weeklySummaries": [
     {
-      "recommendations": "The Toyota will need a washing.  Park under a tree and there's a lot of poop.",
-      "date": "2020-01-10",
-      "carId": 2,
-      "userId": 1,
-      "mileage": "212122",
-      "id": 7
-    },
-    {
-      "recommendations": "I had a client whose baby threw up in the car.  I clean it up, but you can still smell it.  Might need to have the car shampooed.",
+      "recommendations": "Dfjdkfjsf",
       "date": "2020-01-03",
-      "carId": 2,
-      "userId": 1,
-      "mileage": "204122",
-      "id": 8
+      "carId": 7,
+      "userId": 5,
+      "mileage": "111000",
+      "id": 11
     },
     {
-      "recommendations": "200 miles until the next tire rotation.",
-      "date": "2020-01-10",
-      "carId": 3,
-      "userId": 3,
-      "mileage": "306255",
-      "id": 9
-    },
-    {
-      "recommendations": "wewewe",
-      "date": "2020-01-04",
-      "carId": 3,
-      "userId": 3,
-      "mileage": "2222222",
-      "id": 10
+      "recommendations": "I recommend an oil change soon.",
+      "date": "2020-11-27",
+      "carId": 10,
+      "userId": 4,
+      "mileage": "207142",
+      "id": 12
     }
   ]
 }
