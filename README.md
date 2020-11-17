@@ -14,4 +14,4 @@ Want to use KeepUp? Follow the instructions bellow to run the application.
 What can you do with KeepUp?
 Their are two different views for the app.  There is the user view where the issue can send maintenance issues and weekly updates to the admin views.
 
-Enjoy.
+Enjoy!!
