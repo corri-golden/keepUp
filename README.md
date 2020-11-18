@@ -5,7 +5,8 @@ What is KeepUp? KeepUp is a single page, React application that was designed to 
 Want to use KeepUp? Follow the instructions bellow to run the application.
 1.	Clone down this repository. git clone git@github.com:corri-golden/keepUp.git
 2.	cd into the root directory of the app.
-3.	Run npm start to verify that installation was successful and start the application.
+3.  run npm install.
+3.	run npm start to verify that installation was successful and start the application.
 4.	cd into the /api directory.
 5.	In the api folder, run json-server -p 5002 -w database.json.
 6.	Go to http://localhost:3000/ to view the app.
